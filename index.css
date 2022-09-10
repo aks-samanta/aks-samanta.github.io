@@ -27,14 +27,14 @@
 
 }
 #right>a>div{
-    color: yellow;
+    color: rgb(255, 200, 0);
     border-radius: 7px;
     padding: 0 10px;
    
 }
 #right>a>div:hover{
 
-    box-shadow: rgb(238, 255, 0) 3px 3px 3px;
+    box-shadow: rgb(255, 200, 0) 3px 3px 3px;
 }
 #left{
     display: flex;
