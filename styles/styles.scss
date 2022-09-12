@@ -284,7 +284,7 @@ section{
     .timeline-item{
         position: relative;
         padding-left: 3rem;
-        border-left: 1px solid var(--color-grey-5);
+        border-left: 1px solid var(--color-grey-4);
         .tl-icon{
             position: absolute;
             left: -27px;
@@ -300,9 +300,39 @@ section{
                 font-size: 1.5rem;
             }
         }
+        .tl-duration{
+            padding: .2rem .6rem;
+            background-color: var(--color-grey-5);
+            border-radius: 15px;
+            display: inline;
+            font-size: .8rem;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+        h5{
+            padding: 1rem 0;
+            text-transform: uppercase;
+            font-size: 1.3rem;
+            font-weight: 600;
+            span{
+                color: var(--color-grey-2);
+                font-weight: 500;
+                font-size: 1.2rem;
+                
+            }
+        }
+        p{
+            color: var(--color-grey-2);
+        }
     }
 }
-
+hr{
+    border: 1px solid var(--color-grey-3);
+    margin-top: 2rem;
+    
+ 
+    
+}
 //Independent component
 .btn-con{
     display: flex;
