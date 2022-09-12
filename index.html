@@ -10,25 +10,121 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
    
 </head>
 
 <body class="main-content">
-    <header class="section sec1 header active">
-        <!-- <i class="fab fa-brands fa-instagram"></i> -->
+    <header class="section sec1 header active" id="home">
+       <div class="header-content">
+        <div class="left-header">
+            <div class="h-shape"></div>
+            <div class="image">
+                <img width="100%" src="./img/Q_1659200191225__1_-removebg.png" alt="">
+
+            </div>
+        </div>
+        <div class="right-header">
+            <h1 class="name">
+                Hi, I'm <span>Akash Samanta</span> 
+                A Web Developer.
+            </h1>
+            <p>
+                I'm a Full Stack Web Developer, with Java and it's Frameworks for the Backend.
+
+            </p>
+            <div class="btn-con">
+                <a href="img/Resume Akash Samanta (1).pdf" download="Akash_Samanta_Resume" class="main-btn">
+                    <span class="btn-text">Resume</span>
+                    <span class="btn-icon"><i class="fas fa-download"></i></span>
+                </a>
+            </div>
+            
+        </div>
+       </div>
        
     </header>
     <main>
      
-        <section class="section sec2 about"></section>
-        <section class="section sec3 portfolio"></section>
-        <section class="section sec4 techtool"></section>
-        <section class="section sec5 contact"></section>
+        <section class="section sec2 about" id="about">
+            <div class="main-title">
+                <h2>About <span>me</span><span class="bg-text">my stats</span></h2>
+            </div>
+            <div class="about-container">
+                <div class="left-about">
+                    <h4>Information about me.</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque eaque quo nam. Reiciendis nam obcaecati blanditiis adipisci quasi, est quidem consectetur? Quasi magnam error quo animi doloremque optio, quidem beatae.</p>
+                       <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae laborum dignissimos debitis nam ab id quibusdam rem numquam, eaque quos officia dolore quo corporis, repudiandae architecto cumque quasi blanditiis! Omnis!
+                        
+                    </p>
+                    <div class="btn-con">
+                        <a href="img/Resume Akash Samanta (1).pdf" download="Akash_Samanta_Resume" class="main-btn">
+                            <span class="btn-text">Resume</span>
+                            <span class="btn-icon"><i class="fas fa-download"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="right-about">
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">1000+</p>
+                            <p class="small-text">Hours of <br> Coding Practice</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">200+</p>
+                            <p class="small-text">DSA Problems <br> Solved</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">100+</p>
+                            <p class="small-text">Hours of <br> Soft-Skill training</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">10+</p>
+                            <p class="small-text">Projects <br> Completed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-title">
+                <h2>Github <span>contributions</span><span class="bg-text">contributions</span></h2>
+            </div> 
+            <div class="calendar">
+                <!-- Loading stuff -->
+                Loading the data just for you.
+                
+            </div>
+            <div class="main-title">
+                <h2>My  <span>Timeline</span><span class="bg-text">  timeline</span></h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="tl-duration">April 2022 - Present</p>
+                    <h5>Learning Full Stack Web Developement <span>Java Backend</span></h5>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolore quo optio consectetur voluptatibus, unde voluptatum, nisi expedita eius corrupti numquam tenetur, eum consequuntur dignissimos dolorum nobis doloremque recusandae sapiente.
+                        
+                    </p>
+                </div>
+            </div>
+
+        </section>
+        <section class="section sec3 portfolio" id="portfolio"></section>
+        <section class="section sec4 techtool" id="techtool"></section>
+        <section class="section sec5 contact" id="contact"></section>
     </main>
     
 <div class="controls">
-    <div class="control control-1 active-btn">
+    <div class="control control-1 active-btn" data-id="home">
         <i class="fas fa-house-user"></i>
         
     </div>
@@ -51,3 +147,9 @@
 </body>
 
 </html>
+<script
+  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+</script>
+<script>
+    GitHubCalendar(".calendar", "aks-samanta", { responsive: true });
+</script>
