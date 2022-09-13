@@ -583,6 +583,7 @@ hr{
         margin-left: 3rem;
         .input-control{
             margin: 1.5rem 0;
+           
             input, textarea{
                 border-radius: 30px;
                 font-weight: inherit;
@@ -592,6 +593,7 @@ hr{
                 outline: none;
                 border: none;
                 background-color: var(--color-grey-5);
+                color: var(--color-grey-1);
                 width: 100%;
                 columns: var(--color-white);
                 resize: none;
