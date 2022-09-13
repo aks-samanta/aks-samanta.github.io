@@ -1,0 +1,117 @@
+@media screen and (max-width: 600px){
+    header{
+        padding: 0;
+    }
+    header .right-header{
+        padding: 2rem !important;
+    }
+
+    .theme-btn{
+        width: 50px;
+        height: 50px;
+    }
+    // .bg-text{
+    //     font-size: 5.5rem !important;
+    // }
+    .header-content{
+        grid-template-columns: 1fr;
+        padding-bottom: 6rem ;
+
+    }
+    
+
+    .right-header{
+       
+        width: 90%;
+        margin: 0 auto;
+        
+    }
+    
+    .header-content .left-header .image{
+        
+        margin: 0 auto;
+        width: 80%;
+        height: 85%;
+        
+    }
+    .header-content {
+        height: 100% ;
+    }
+
+    .about-container{
+        grid-template-columns: 1fr;
+        .right-about{
+            grid-template-columns: 1fr;
+            padding-top: 2.5rem;
+        }
+        .left-about{
+            padding-right: 0;
+            p{
+                padding-left: 0;
+            }
+        }
+    }
+
+    .timeline{
+        grid-template-columns: 1fr;
+        padding-bottom: 6rem;
+    }
+
+    .techtools{
+        grid-template-columns: repeat(2, 1fr);
+        padding-bottom: 6rem;
+    }
+
+    .portfolios{
+        grid-template-columns: 1fr;
+        padding-bottom: 6rem;
+    }
+
+    .contact-content-con{
+        flex-direction: column;
+        .right-contact{
+            margin-left: 0;
+            margin-top: 2.5rem;
+        }
+
+    }
+    .contact-content-con .right-contact .i-c-2{
+        flex-direction: column;
+    }
+    .contact-content-con .right-contact .i-c-2 :last-child{
+        margin-left: 0 ;
+        margin-top: 1.5rem ;
+    }
+    .main-title{
+        h2{
+            font-size: 2rem;
+            span{
+                font-size: 2.5rem;
+            }
+            .bg-text{
+                font-size: 4rem;
+            }
+        }
+    }
+    .section{
+        padding: 2rem 2.5rem ;
+
+    }
+    
+
+
+    .controls{
+        top: auto;
+        bottom: 0;
+        flex-direction: row;
+        justify-content: center;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        background-color: var(--color-grey-5);
+        .control{
+            margin: 1rem .3rem;
+        }
+    }
+
+}

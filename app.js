@@ -14,7 +14,12 @@ function PageTransitions(){
             this.className += " active-btn";
         })
     }
-   
+    //toggle theme
+    const themeBtn = document.querySelector(".theme-btn");
+    themeBtn.addEventListener("click",()=>{
+        let element = document.body;
+        element.classList.toggle("light-mode");
+    })
 }
 
 PageTransitions();
@@ -38,6 +43,5 @@ allSections.forEach(addEventListener("click", (e) => {
         const element = document.getElementById(id);
         element.classList.add("active");
     }
+    
 }))
-
-
