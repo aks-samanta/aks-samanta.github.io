@@ -1,4 +1,5 @@
-@media screen and (max-width: 600px){
+@media screen and (max-width: 700px) {
+    
     header{
         padding: 0;
     }
@@ -10,15 +11,26 @@
         width: 50px;
         height: 50px;
     }
-    // .bg-text{
-    //     font-size: 5.5rem !important;
-    // }
+     .main-title{
+        h2{
+            font-size: 4rem;
+            span{
+                font-size: 4rem;
+            }
+            .bg-text{
+                font-size: 4.5rem;
+
+            }
+        }
+    }
     .header-content{
         grid-template-columns: 1fr;
         padding-bottom: 6rem ;
 
     }
-    
+    .contact-content-con{
+        font-size: .8rem;
+    }
 
     .right-header{
        
@@ -57,20 +69,61 @@
         padding-bottom: 6rem;
     }
 
+
     .techtools{
-        grid-template-columns: repeat(2, 1fr);
-        padding-bottom: 6rem;
+        grid-template-columns: repeat(2, 10rem) !important;
+               padding-bottom: 6rem;
     }
 
     .portfolios{
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
         padding-bottom: 6rem;
     }
 
+    
+    .main-title{
+        h2{
+            font-size: 2rem;
+            span{
+                font-size: 2.5rem;
+            }
+            .bg-text{
+                font-size: 4rem;
+            }
+        }
+    }
+    .section{
+        padding: 2rem 2.5rem ;
+      
+
+    }
+   
+
+
+    .controls{
+        top: auto;
+        bottom: 0;
+        flex-direction: row;
+        justify-content: center;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        background-color: var(--color-grey-5);
+        .control{
+            margin: 1rem .3rem;
+        }
+    }
+
+}
+
+
+
+@media screen and (max-width: 1332px){
+ 
     .contact-content-con{
         flex-direction: column;
         padding-bottom: 6rem;
-        font-size: .7rem;
+        
         .right-contact{
             margin-left: 0;
             margin-top: 2.5rem;
@@ -87,36 +140,38 @@
         margin-top: 1.5rem ;
        
     }
-    .main-title{
-        h2{
-            font-size: 2rem;
-            span{
-                font-size: 2.5rem;
-            }
-            .bg-text{
-                font-size: 4rem;
-            }
-        }
-    }
-    .section{
-        padding: 2rem 2.5rem ;
 
-    }
+}
+
+@media screen and (max-width: 1000px){
     
+    
+    header{
+        padding: 0;
+    }
+    header .right-header{
+        padding: 2rem !important;
+    }
 
-
-    .controls{
-        top: auto;
-        bottom: 0;
-        flex-direction: row;
-        justify-content: center;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 100%;
-        background-color: var(--color-grey-5);
-        .control{
-            margin: 1rem .3rem;
+   
+    .section{
+        padding: 2rem 5rem;
+    }
+    .about-container{
+        grid-template-columns: 1fr;
+        .right-about{
+            padding-top: 2.5rem;
         }
     }
+
+  
+
+    .portfolios{
+        grid-template-columns: 1fr 1fr;
+        
+    }
+  .techtools{
+    grid-template-columns: repeat(3, 10rem);
+  }
 
 }
