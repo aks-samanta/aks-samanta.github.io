@@ -709,6 +709,7 @@ hr {
   }
   .contact-content-con {
     flex-direction: column;
+    padding-bottom: 6rem;
   }
   .contact-content-con .right-contact {
     margin-left: 0;
