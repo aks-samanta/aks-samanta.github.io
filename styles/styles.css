@@ -623,6 +623,11 @@ hr {
   transition: all 0.4s ease-in-out;
 }
 
+button {
+  background-color: transparent;
+  font-size: 1.3rem;
+}
+
 .main-title {
   text-align: center;
   padding-top: 5rem;
