@@ -661,6 +661,48 @@ button {
   padding: 1rem;
 }
 
+
+@media screen and (max-width: 1332px) {
+  .contact-content-con {
+    flex-direction: column;
+    padding-bottom: 6rem;
+  }
+  .contact-content-con .right-contact {
+    margin-left: 0;
+    margin-top: 2.5rem;
+  }
+  .contact-content-con .right-contact .i-c-2 {
+    flex-direction: column;
+  }
+  .contact-content-con .right-contact .i-c-2 :last-child {
+    margin-left: 0;
+    margin-top: 1.5rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  header {
+    padding: 0;
+  }
+  header .right-header {
+    padding: 2rem !important;
+  }
+  .section {
+    padding: 2rem 5rem;
+  }
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+  .about-container .right-about {
+    padding-top: 2.5rem;
+  }
+  .portfolios {
+    grid-template-columns: 1fr 1fr;
+  }
+  .techtools {
+    grid-template-columns: repeat(3, 10rem);
+  }
+}
+
 @media screen and (max-width: 700px) {
   header {
     padding: 0;
@@ -735,7 +777,7 @@ button {
     font-size: 4rem;
   }
   .section {
-    padding: 2rem 2.5rem;
+    padding: 2rem 2.5rem !important;
   }
   .controls {
     top: auto;
@@ -749,45 +791,5 @@ button {
   }
   .controls .control {
     margin: 1rem 0.3rem;
-  }
-}
-@media screen and (max-width: 1332px) {
-  .contact-content-con {
-    flex-direction: column;
-    padding-bottom: 6rem;
-  }
-  .contact-content-con .right-contact {
-    margin-left: 0;
-    margin-top: 2.5rem;
-  }
-  .contact-content-con .right-contact .i-c-2 {
-    flex-direction: column;
-  }
-  .contact-content-con .right-contact .i-c-2 :last-child {
-    margin-left: 0;
-    margin-top: 1.5rem;
-  }
-}
-@media screen and (max-width: 1000px) {
-  header {
-    padding: 0;
-  }
-  header .right-header {
-    padding: 2rem !important;
-  }
-  .section {
-    padding: 2rem 5rem;
-  }
-  .about-container {
-    grid-template-columns: 1fr;
-  }
-  .about-container .right-about {
-    padding-top: 2.5rem;
-  }
-  .portfolios {
-    grid-template-columns: 1fr 1fr;
-  }
-  .techtools {
-    grid-template-columns: repeat(3, 10rem);
   }
 }/*# sourceMappingURL=styles.css.map */
