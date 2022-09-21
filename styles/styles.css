@@ -216,8 +216,8 @@ section {
 .header-content .left-header .image img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
   border-radius: var(--br-sm-2);
   transition: all 0.4s ease-in-out;
   filter: grayscale(100%);
@@ -378,9 +378,9 @@ hr {
 }
 .portfolios .portfolio-item img {
   width: 100%;
-  height: 300px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  height: 200px;
+  -o-object-fit: fill;
+     object-fit: fill;
   border-radius: 15px;
 }
 .portfolios .portfolio-item .hover-items {
@@ -400,9 +400,10 @@ hr {
   transition: all 0.4s ease-in-out;
 }
 .portfolios .portfolio-item .hover-items h3 {
-  font-size: 1.5rem;
-  color: var(--color-white);
+  font-size: 1rem;
+  color: var(--color-primary);
   margin-bottom: 1.5rem;
+  text-align: center;
 }
 .portfolios .portfolio-item .hover-items .icons {
   display: flex;
@@ -441,7 +442,7 @@ hr {
 .techtools {
   display: grid;
   grid-template-columns: repeat(5, 10rem);
-  grid-gap: 5rem;
+  grid-gap: 2rem;
   margin-top: 3rem;
   align-items: center;
   justify-content: center;
@@ -661,48 +662,6 @@ button {
   padding: 1rem;
 }
 
-
-@media screen and (max-width: 1332px) {
-  .contact-content-con {
-    flex-direction: column;
-    padding-bottom: 6rem;
-  }
-  .contact-content-con .right-contact {
-    margin-left: 0;
-    margin-top: 2.5rem;
-  }
-  .contact-content-con .right-contact .i-c-2 {
-    flex-direction: column;
-  }
-  .contact-content-con .right-contact .i-c-2 :last-child {
-    margin-left: 0;
-    margin-top: 1.5rem;
-  }
-}
-@media screen and (max-width: 1000px) {
-  header {
-    padding: 0;
-  }
-  header .right-header {
-    padding: 2rem !important;
-  }
-  .section {
-    padding: 2rem 5rem;
-  }
-  .about-container {
-    grid-template-columns: 1fr;
-  }
-  .about-container .right-about {
-    padding-top: 2.5rem;
-  }
-  .portfolios {
-    grid-template-columns: 1fr 1fr;
-  }
-  .techtools {
-    grid-template-columns: repeat(3, 10rem);
-  }
-}
-
 @media screen and (max-width: 700px) {
   header {
     padding: 0;
@@ -713,6 +672,10 @@ button {
   .theme-btn {
     width: 50px;
     height: 50px;
+  }
+  .main-title {
+    padding-top: 1rem;
+    padding-bottom: 2.5rem;
   }
   .main-title h2 {
     font-size: 4rem;
@@ -760,8 +723,9 @@ button {
     padding-bottom: 6rem;
   }
   .techtools {
-    grid-template-columns: repeat(2, 10rem) !important;
+    grid-template-columns: repeat(2, 9rem) !important;
     padding-bottom: 6rem;
+    gap: 1.5rem;
   }
   .portfolios {
     grid-template-columns: 1fr !important;
@@ -776,9 +740,6 @@ button {
   .main-title h2 .bg-text {
     font-size: 4rem;
   }
-  .section {
-    padding: 2rem 2.5rem !important;
-  }
   .controls {
     top: auto;
     bottom: 0;
@@ -791,5 +752,48 @@ button {
   }
   .controls .control {
     margin: 1rem 0.3rem;
+  }
+  .section {
+    padding: 2rem 1.5rem !important;
+  }
+}
+@media screen and (max-width: 1000px) {
+  header {
+    padding: 0;
+  }
+  header .right-header {
+    padding: 2rem !important;
+  }
+  .section {
+    padding: 2rem 5rem;
+  }
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+  .about-container .right-about {
+    padding-top: 2.5rem;
+  }
+  .portfolios {
+    grid-template-columns: 1fr 1fr;
+  }
+  .techtools {
+    grid-template-columns: repeat(3, 10rem);
+  }
+}
+@media screen and (max-width: 1332px) {
+  .contact-content-con {
+    flex-direction: column;
+    padding-bottom: 6rem;
+  }
+  .contact-content-con .right-contact {
+    margin-left: 0;
+    margin-top: 2.5rem;
+  }
+  .contact-content-con .right-contact .i-c-2 {
+    flex-direction: column;
+  }
+  .contact-content-con .right-contact .i-c-2 :last-child {
+    margin-left: 0;
+    margin-top: 1.5rem;
   }
 }/*# sourceMappingURL=styles.css.map */

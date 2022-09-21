@@ -15,6 +15,9 @@
         height: 50px;
     }
      .main-title{
+       
+            padding-top: 1rem;
+            padding-bottom: 2.5rem;
         h2{
             font-size: 4rem;
             span{
@@ -75,8 +78,9 @@
 
 
     .techtools{
-        grid-template-columns: repeat(2, 10rem) !important;
+        grid-template-columns: repeat(2, 9rem) !important;
                padding-bottom: 6rem;
+               gap: 1.5rem;
     }
 
     .portfolios{
@@ -113,7 +117,9 @@
             margin: 1rem .3rem;
         }
     }
-
+    .section{
+        padding: 2rem 1.5rem !important;
+    }
 }
 
 @media screen and (max-width: 1000px){
@@ -128,7 +134,7 @@
 
    
     .section{
-        padding: 2rem 2.5rem;
+        padding: 2rem 5rem;
     }
     .about-container{
         grid-template-columns: 1fr;
