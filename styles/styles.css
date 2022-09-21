@@ -23,7 +23,7 @@
 
 .light-mode {
   --color-primary: #b5c5ff;
-  --color-secondary: rgb(209, 113, 134);
+  --color-secondary: rgb(196, 82, 82);
   --color-white: #000;
   --color-black: #FFFFFF;
   --color-grey-0: #12181b;
@@ -220,10 +220,6 @@ section {
      object-fit: contain;
   border-radius: var(--br-sm-2);
   transition: all 0.4s ease-in-out;
-  filter: grayscale(100%);
-}
-.header-content .left-header .image img:hover {
-  filter: grayscale(0);
 }
 .header-content .right-header {
   display: flex;
@@ -306,7 +302,7 @@ section {
 
 .timeline {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-gap: 2rem;
   padding-bottom: 3rem;
 }
@@ -352,6 +348,7 @@ section {
 }
 .timeline .timeline-item p {
   color: var(--color-grey-2);
+  margin-bottom: 0.8rem;
 }
 
 hr {
@@ -463,12 +460,10 @@ hr {
   color: var(--color-secondary);
 }
 .techtools .techtool:hover img {
-  filter: grayscale(0);
   transform: scale(1.1);
 }
 .techtools .techtool img {
   width: 100%;
-  filter: grayscale(100%);
   transition: all 0.4s ease-in-out;
   -o-object-fit: cover;
      object-fit: cover;
@@ -662,6 +657,14 @@ button {
   padding: 1rem;
 }
 
+@media screen and (max-width: 500px) {
+  .section {
+    padding: 2rem 1.5rem !important;
+  }
+  .timeline {
+    margin-left: 0.5rem;
+  }
+}
 @media screen and (max-width: 700px) {
   header {
     padding: 0;
@@ -754,7 +757,7 @@ button {
     margin: 1rem 0.3rem;
   }
   .section {
-    padding: 2rem 1.5rem !important;
+    padding: 2rem 2.5rem;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -765,7 +768,7 @@ button {
     padding: 2rem !important;
   }
   .section {
-    padding: 2rem 5rem;
+    padding: 2rem 6rem;
   }
   .about-container {
     grid-template-columns: 1fr;

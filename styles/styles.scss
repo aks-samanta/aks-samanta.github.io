@@ -24,7 +24,7 @@
 
 .light-mode{
     --color-primary: #b5c5ff;
-    --color-secondary: rgb(209, 113, 134);
+    --color-secondary: rgb(196, 82, 82);
     --color-white: #000;
     --color-black: #FFFFFF;
     --color-grey-0: #12181b;
@@ -36,6 +36,7 @@
     --color-grey-6: #f8f8f8;
     --br-sm-2: 14px;
     --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
+    
 }
 body{
     background-color: var(--color-primary);
@@ -217,10 +218,10 @@ section{
                 object-fit: contain;
                 border-radius:  var(--br-sm-2);
                 transition: all .4s ease-in-out;
-                filter: grayscale(100%);
-                &:hover{
-                    filter: grayscale(0);
-                }
+                // filter: grayscale(100%);
+                // &:hover{
+                //     filter: grayscale(0);
+                // }
             }
 
         }
@@ -320,7 +321,7 @@ section{
 
 .timeline{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(1,1fr);
     grid-gap: 2rem;
     padding-bottom: 3rem;
     .timeline-item{
@@ -365,6 +366,7 @@ section{
         }
         p{
             color: var(--color-grey-2);
+            margin-bottom: .8rem;
         }
     }
 }
@@ -481,7 +483,7 @@ hr{
             transition: all .4s ease-in-out;
             color: var(--color-secondary);
             img{
-                filter: grayscale(0);
+                // filter: grayscale(0);
                 transform: scale(1.1);
                 
             }
@@ -489,7 +491,7 @@ hr{
         img{
             width: 100%;
            
-            filter: grayscale(100%);
+            // filter: grayscale(100%);
             transition: all .4s ease-in-out;
             object-fit: cover;
             padding: 1rem;

@@ -1,4 +1,11 @@
-
+@media screen and (max-width: 500px){
+    .section{
+        padding: 2rem 1.5rem !important;
+    }
+    .timeline{
+        margin-left: .5rem;
+    }
+}
    
 
 @media screen and (max-width: 700px) {
@@ -73,6 +80,7 @@
 
     .timeline{
         grid-template-columns: 1fr;
+       
         padding-bottom: 6rem;
     }
 
@@ -118,7 +126,7 @@
         }
     }
     .section{
-        padding: 2rem 1.5rem !important;
+        padding: 2rem 2.5rem ;
     }
 }
 
@@ -134,7 +142,7 @@
 
    
     .section{
-        padding: 2rem 5rem;
+        padding: 2rem 6rem;
     }
     .about-container{
         grid-template-columns: 1fr;
