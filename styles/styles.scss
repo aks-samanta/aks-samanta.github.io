@@ -400,7 +400,15 @@ hr{
             height: 200px;
             object-fit: fill;
             border-radius: 15px;
-
+           
+        }
+        .project-desc{
+            color: var(--color-primary);
+            
+        }
+        
+        .project-heading{
+            color: var(--color-secondary);
         }
         .hover-items{
             width: 100%;
