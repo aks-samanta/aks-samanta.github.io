@@ -107,16 +107,7 @@ section {
 
 .active {
   display: block;
-  -webkit-animation: scaleAnim 1s ease-in-out;
-          animation: scaleAnim 1s ease-in-out;
-}
-@-webkit-keyframes scaleAnim {
-  0% {
-    transform: translateY(-100%) scaleY(0);
-  }
-  100% {
-    transform: translateY(0) scale(1);
-  }
+  animation: scaleAnim 1s ease-in-out;
 }
 @keyframes scaleAnim {
   0% {
@@ -483,7 +474,9 @@ hr {
 }
 .techtools .techtool .techtool-text h2 {
   font-size: 1.5rem;
-  margin-bottom: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .contact-content-con {

@@ -513,7 +513,10 @@ hr{
             border-top: 8px solid var(--color-secondary);
             h2{
                 font-size: 1.5rem;
-                margin-bottom: .7rem;
+                // margin-bottom: .7rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
 
         }
