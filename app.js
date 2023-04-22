@@ -41,7 +41,7 @@ function PageTransitions() {
 }
 
 PageTransitions();
-
+try{
 allSections.forEach(
   addEventListener("click", (e) => {
     const id = e.target.dataset.id;
@@ -63,3 +63,5 @@ allSections.forEach(
     }
   })
 );
+}
+catch{}
