@@ -8,7 +8,7 @@
 :root {
   --color-primary: #191d2b;
   --color-secondary: rgb(255, 125, 38);
-  --color-white: #FFFFFF;
+  --color-white: #ffffff;
   --color-black: #000;
   --color-grey-0: #f8f8f8;
   --color-grey-1: #dbe1e8;
@@ -18,14 +18,14 @@
   --color-grey-5: #2a2e35;
   --color-grey-6: #12181b;
   --br-sm-2: 14px;
-  --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
+  --box-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.3);
 }
 
 .light-mode {
   --color-primary: #b5c5ff;
   --color-secondary: rgb(196, 82, 82);
   --color-white: #000;
-  --color-black: #FFFFFF;
+  --color-black: #ffffff;
   --color-grey-0: #12181b;
   --color-grey-1: #2a2e35;
   --color-grey-2: #454e56;
@@ -34,7 +34,7 @@
   --color-grey-5: #dbe1e8;
   --color-grey-6: #f8f8f8;
   --br-sm-2: 14px;
-  --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
+  --box-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.3);
 }
 
 body {
@@ -105,19 +105,6 @@ section {
   transform: translateY(0) scale(1);
 }
 
-.active {
-  display: block;
-  animation: scaleAnim 1s ease-in-out;
-}
-@keyframes scaleAnim {
-  0% {
-    transform: translateY(-100%) scaleY(0);
-  }
-  100% {
-    transform: translateY(0) scale(1);
-  }
-}
-
 .controls {
   position: fixed;
   z-index: 10;
@@ -127,11 +114,10 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  transform: translateY(-50%);
+  transform: translateY(-40%);
 }
 .controls .active-btn {
   background-color: var(--color-secondary) !important;
-  transition: all 0.4s ease-in-out;
 }
 .controls .active-btn i {
   color: var(--color-white) !important;
@@ -549,7 +535,8 @@ hr {
 .contact-content-con .right-contact .input-control {
   margin: 1.5rem 0;
 }
-.contact-content-con .right-contact .input-control input, .contact-content-con .right-contact .input-control textarea {
+.contact-content-con .right-contact .input-control input,
+.contact-content-con .right-contact .input-control textarea {
   border-radius: 30px;
   font-weight: inherit;
   font-size: inherit;
@@ -657,12 +644,31 @@ button {
   padding: 1rem;
 }
 
+#github-streak-stats,
+#github-top-langs,
+#github-stats-card {
+  width: 50%;
+  margin: auto;
+}
+
 @media screen and (max-width: 500px) {
   .section {
     padding: 2rem 1.5rem !important;
   }
   .timeline {
     margin-left: 0.5rem;
+  }
+}
+/* CSS for mobile screens */
+@media (max-width: 600px) {
+  #github-streak-stats,
+  #github-top-langs,
+  #github-stats-card {
+    width: 100%;
+    margin: auto;
+  }
+  .git-stat {
+    margin-bottom: 2rem;
   }
 }
 @media screen and (max-width: 700px) {

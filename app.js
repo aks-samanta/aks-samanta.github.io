@@ -2,25 +2,6 @@ const sections = document.querySelectorAll(".section");
 const sectBtns = document.querySelectorAll(".controls");
 const sectBtn = document.querySelectorAll(".control");
 const allSections = document.querySelectorAll(".main-content");
-// document.getElementById("dual_fn_res").addEventListener("click", dual_fn);
-// function dual_fn() {
-//   window.open(
-//     "https://drive.google.com/file/d/1Y8Mof5D-2E3QAmG0Gd3En6l_rySZUmhD/view?usp=sharing",
-//     "_blank" // <- This is what makes it open in a new window.
-//   );
-
-//   // window.location.href = "https://drive.google.com/file/d/1Y8Mof5D-2E3QAmG0Gd3En6l_rySZUmhD/view?usp=sharing";
-// }
-
-// document.getElementById("dual_fn_res2").addEventListener("click", dual_fn);
-// function dual_fn() {
-//   window.open(
-//     "https://drive.google.com/file/d/1Y8Mof5D-2E3QAmG0Gd3En6l_rySZUmhD/view?usp=sharing",
-//     "_blank" // <- This is what makes it open in a new window.
-//   );
-
-//   // window.location.href = "https://drive.google.com/file/d/1Y8Mof5D-2E3QAmG0Gd3En6l_rySZUmhD/view?usp=sharing";
-// }
 
 function PageTransitions() {
   //Button click active class
@@ -31,6 +12,8 @@ function PageTransitions() {
       currBtn[0].className = currBtn[0].className.replace("active-btn", "");
       this.className += " active-btn";
     });
+
+    
   }
   //toggle theme
   const themeBtn = document.querySelector(".theme-btn");
@@ -41,27 +24,34 @@ function PageTransitions() {
 }
 
 PageTransitions();
-try{
-allSections.forEach(
-  addEventListener("click", (e) => {
-    const id = e.target.dataset.id;
-    if (id) {
-      //remove selected from the other button
-      sectBtns.forEach((btn) => {
-        btn.classList.remove("active");
-      });
-      e.target.classList.add("active");
 
-      //hide other sections
+const navLinks = document.querySelectorAll('.navbar a');
 
-      sections.forEach((section) => {
-        // section.classList.remove("active");
-      });
+window.addEventListener('scroll', () => {
+  const currentSection = sections.length - [...sections].reverse().findIndex((section) => window.scrollY >= section.offsetTop - 30) - 1;
+  const activeLink = document.querySelector(`.navbar a[href="#${sections[currentSection].id}"]`);
 
-      const element = document.getElementById(id);
-      // element.classList.add("active");
-    }
-  })
-);
+  navLinks.forEach((link) => {
+    link.classList.remove('active');
+    link.querySelector('.control').classList.remove('active-btn');
+  });
+
+  activeLink.classList.add('active');
+  activeLink.querySelector('.control').classList.add('active-btn');
+});
+
+function downloadResume() {
+  // Replace the URL below with the direct download link to your resume
+  const downloadLink = "./pdf/Akash_Samanta_Resume.pdf";
+  
+  // Create a temporary link element and set its attributes
+  const link = document.createElement("a");
+  link.setAttribute("href", downloadLink);
+  link.setAttribute("download", "Akash Samanta Resume");
+  
+  // Click the link to start the download
+  link.click();
+  
+  // Open the Google Drive link in a new tab
+  window.open("https://drive.google.com/file/d/1Y8Mof5D-2E3QAmG0Gd3En6l_rySZUmhD/view?usp=sharing", "_blank");
 }
-catch{}
