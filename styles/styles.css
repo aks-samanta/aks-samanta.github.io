@@ -565,6 +565,7 @@ hr {
 .btn-con {
   display: flex;
   align-self: flex-start;
+  cursor: pointer;
 }
 
 .main-btn {
