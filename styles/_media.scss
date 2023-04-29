@@ -10,6 +10,12 @@
 
 /* CSS for mobile screens */
 @media (max-width: 600px) {
+    .section {
+        padding: 2rem 1.5rem !important;
+    }
+    .timeline {
+        margin-left: 0.5rem;
+    }
     #github-streak-stats,
     #github-top-langs,
     #github-stats-card {
