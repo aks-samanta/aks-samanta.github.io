@@ -645,6 +645,10 @@ button {
   padding: 1rem;
 }
 
+.react-activity-calender {
+  display: flex;
+}
+
 #github-streak-stats,
 #github-top-langs,
 #github-stats-card {
@@ -661,13 +665,15 @@ button {
   }
 }
 /* CSS for mobile screens */
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .section {
     padding: 2rem 1.5rem !important;
   }
   .timeline {
     margin-left: 0.5rem;
   }
+}
+@media screen and (max-width: 700px) {
   #github-streak-stats,
   #github-top-langs,
   #github-stats-card {
@@ -676,9 +682,8 @@ button {
   }
   .git-stat {
     margin-bottom: 2rem;
+    width: 100%;
   }
-}
-@media screen and (max-width: 700px) {
   header {
     padding: 0;
   }
