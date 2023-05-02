@@ -39,7 +39,7 @@ window.addEventListener('scroll', () => {
   activeLink.classList.add('active');
   activeLink.querySelector('.control').classList.add('active-btn');
 });
-
+try{
  document
   .getElementById("resume-button-1")
    .addEventListener("click",opendrive);
@@ -51,7 +51,10 @@ document
  document
   .getElementById("dual_fn_res2")
   .addEventListener("click",opendrive);
-
+}
+catch(err) {
+console.log(err);
+}
 
 function opendrive(){
   window.open(
