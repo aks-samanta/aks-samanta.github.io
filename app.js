@@ -44,14 +44,26 @@ function downloadResume() {
   // Replace the URL below with the direct download link to your resume
   const downloadLink = "./pdf/Akash_Samanta_Resume.pdf";
   
-  // Create a temporary link element and set its attributes
-  const link = document.createElement("a");
-  link.setAttribute("href", downloadLink);
-  link.setAttribute("download", "Akash Samanta Resume");
-  
-  // Click the link to start the download
-  link.click();
+  // Make a request to the server and receive the file as a Blob object
+  fetch(downloadLink)
+    .then(response => response.blob())
+    .then(blob => {
+      // Create a URL for the Blob object
+      const url = URL.createObjectURL(blob);
+
+      // Create a link element and set its attributes
+      const link = document.createElement("a");
+      link.setAttribute("href", url);
+      link.setAttribute("download", "Akash Samanta Resume");
+      
+      // Click the link to start the download
+      link.click();
+
+      // Clean up the URL object
+      URL.revokeObjectURL(url);
+    });
   
   // Open the Google Drive link in a new tab
   window.open("https://drive.google.com/file/d/1Y8Mof5D-2E3QAmG0Gd3En6l_rySZUmhD/view?usp=sharing", "_blank");
 }
+
