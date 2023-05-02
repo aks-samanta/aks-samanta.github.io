@@ -669,8 +669,12 @@ button {
 #github-stats-card {
     width: 50%;
     margin: auto;
+    margin-top: 1em;
 }
-
+.git-stat{
+    display: block;
+    text-align: center
+}
 
 // media query
 
