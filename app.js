@@ -40,30 +40,22 @@ window.addEventListener('scroll', () => {
   activeLink.querySelector('.control').classList.add('active-btn');
 });
 
-function downloadResume() {
-  // Replace the URL below with the direct download link to your resume
-  const downloadLink = "./pdf/Akash_Samanta_Resume.pdf";
-  
-  // Make a request to the server and receive the file as a Blob object
-  fetch(downloadLink)
-    .then(response => response.blob())
-    .then(blob => {
-      // Create a URL for the Blob object
-      const url = URL.createObjectURL(blob);
+ document
+  .getElementById("resume-button-1")
+   .addEventListener("click",opendrive);
 
-      // Create a link element and set its attributes
-      const link = document.createElement("a");
-      link.setAttribute("href", url);
-      link.setAttribute("download", "Akash Samanta Resume");
-      
-      // Click the link to start the download
-      link.click();
+document
+  .getElementById("resume-button-2")
+  .addEventListener("click",opendrive);
 
-      // Clean up the URL object
-      URL.revokeObjectURL(url);
-    });
-  
-  // Open the Google Drive link in a new tab
-  window.open("https://drive.google.com/file/d/1Y8Mof5D-2E3QAmG0Gd3En6l_rySZUmhD/view?usp=sharing", "_blank");
-}
+ document
+  .getElementById("dual_fn_res2")
+  .addEventListener("click",opendrive);
 
+
+function opendrive(){
+  window.open(
+    (href =
+      "https://drive.google.com/file/d/1Y8Mof5D-2E3QAmG0Gd3En6l_rySZUmhD/view?usp=sharing")
+  );
+ }
