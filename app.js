@@ -41,11 +41,11 @@ window.addEventListener('scroll', () => {
 });
 try{
  document
-  .getElementById("resume-button-1")
+  .getElementById("resume-link-1")
    .addEventListener("click",opendrive);
 
 document
-  .getElementById("resume-button-2")
+  .getElementById("resume-link-2")
   .addEventListener("click",opendrive);
 
  document
