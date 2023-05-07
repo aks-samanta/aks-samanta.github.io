@@ -666,8 +666,22 @@ button {
   body {
     overflow-x: hidden;
   }
+  .section {
+    padding: 2rem 1.5rem !important;
+  }
+  .timeline {
+    margin-left: 0.5rem;
+  }
 }
 /* CSS for mobile screens */
+@media screen and (max-width: 600px) {
+  .section {
+    padding: 2rem 1.5rem !important;
+  }
+  .timeline {
+    margin-left: 0.5rem;
+  }
+}
 @media screen and (max-width: 700px) {
   #github-streak-stats,
   #github-top-langs,
