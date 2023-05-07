@@ -1,22 +1,14 @@
 @media screen and (max-width: 500px) {
-    .section {
-        padding: 2rem 1.5rem !important;
-    }
-    .timeline {
-        margin-left: 0.5rem;
-    }
-    
+   body {
+    overflow-x: hidden;
+   }
+   
 }
 
 /* CSS for mobile screens */
 @media screen and  (max-width: 600px) {
-    .section {
-        padding: 2rem 1.5rem !important;
-    }
-    .timeline {
-        margin-left: 0.5rem;
-    }
    
+ 
   
 }
 
