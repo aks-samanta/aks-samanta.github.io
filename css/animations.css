@@ -1,0 +1,44 @@
+.theme-toggle .sun,
+.theme-toggle .moon {
+    display: none;
+}
+
+body:not(.light-mode) .theme-toggle .moon {
+    display: block;
+}
+
+body.light-mode .theme-toggle .sun {
+    display: block;
+}
+
+[data-reveal-group] > * {
+    transition-delay: calc(var(--i, 0) * 70ms);
+}
+
+.hero-inner > * {
+    animation: rise var(--dur-lg) var(--ease) both;
+}
+
+.hero-inner > *:nth-child(1) { animation-delay: 0.02s; }
+.hero-inner > *:nth-child(2) { animation-delay: 0.1s; }
+.hero-inner > *:nth-child(3) { animation-delay: 0.18s; }
+.hero-inner > *:nth-child(4) { animation-delay: 0.26s; }
+.hero-inner > *:nth-child(5) { animation-delay: 0.34s; }
+.hero-inner > *:nth-child(6) { animation-delay: 0.42s; }
+
+@keyframes rise {
+    from {
+        opacity: 0;
+        transform: translateY(14px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hero-inner > * {
+        animation: none;
+    }
+}

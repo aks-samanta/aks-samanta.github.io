@@ -5,834 +5,611 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akash Samanta Portfolio</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <title>Akash Samanta — Full-Stack Software Engineer</title>
+    <meta name="description"
+        content="Akash Samanta — Full-Stack Software Engineer building production Angular &amp; Java/Spring Boot systems, currently exploring AI/ML at IIT Patna.">
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230a0d12'/%3E%3Ctext x='16' y='22' font-family='monospace' font-size='16' font-weight='700' fill='%235b8cff' text-anchor='middle'%3EAS%3C/text%3E%3C/svg%3E">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;650;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet">
 
+    <link rel="stylesheet" href="css/tokens.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/journey.css">
+    <link rel="stylesheet" href="css/foundations.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/stack.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/animations.css">
 </head>
 
-<body class="main-content">
+<body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
 
-    <div class="controls navbar" id="nav-menu">
+    <nav class="site-nav" id="site-nav">
+        <a href="#home" class="nav-mark" aria-label="Akash Samanta — home">akash<span class="dot">.</span>samanta</a>
 
-        <a href="#home" class="nav-link home">
-            <div class="control control-1 active-btn" data-id="home">
-                <i class="fas fa-house-user"></i>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"
+            aria-controls="nav-links">
+            <i class="fas fa-bars" aria-hidden="true"></i>
+        </button>
 
-            </div>
-        </a>
-
-        <a href="#about" class="nav-link about">
-            <div class="control control-2">
-                <i class="fas fa-user"></i>
-            </div>
-        </a>
-
-        <a href="#skills" class="nav-link skills">
-            <div class="control control-4">
-                <i class="fas fa-tools"></i>
-            </div>
-        </a>
-
-        <a href="#projects" class="nav-link projects">
-            <div class="control control-3">
-                <i class="fas fa-briefcase"></i>
-            </div>
-        </a>
-
-
-
-        <a href="#contact" class="nav-link contact">
-            <div class="control control-5">
-                <i class="fas fa-envelope-open"></i>
-            </div>
-        </a>
-
-        <div id="resume-button-1">
-            <a href="pdf/Akash_Samanta_Resume.pdf" class="nav-link resume" id="resume-link-1"
-                download="Akash_Samanta_Resume">
-                <i class="fas fa-file-download control control-5"></i>
-            </a>
+        <div class="nav-links" id="nav-links">
+            <a href="#journey">Journey</a>
+            <a href="#foundations">Foundations</a>
+            <a href="#projects">Work</a>
+            <a href="#stack">Stack</a>
+            <a href="#contact">Contact</a>
         </div>
 
-    </div>
-
-
-
-    <header class="section sec1 header active" id="home">
-        <div class="header-content">
-            <div class="left-header">
-                <div class="h-shape"></div>
-                <div class="image">
-                    <img src="./img/profile_pic.png" alt="" class="home-img">
-
-                </div>
-            </div>
-            <div class="right-header">
-                <h1 class="name" id="user-detail-name">
-                    Hello 👋,<br> I'm <span>Akash Samanta,</span>
-                    <h2>A Striving Full Stack Web Developer,</h2>
-                </h1>
-                <p>
-                    with expertise in Java | ES6 | Spring-Boot & Angular.
-
-                </p>
-
-                <div class=" btn-con" id="resume-button-2">
-                    <a href="pdf/Akash_Samanta_Resume.pdf" download="Akash_Samanta_Resume" class="main-btn "
-                        id="resume-link-2">
-                        <span class="btn-text">Resume</span>
-                        <span class="btn-icon"><i class="fas fa-download"></i></span>
-                    </a>
-                </div>
-
-
-            </div>
+        <div class="nav-actions">
+            <button class="icon-btn theme-toggle" aria-pressed="false" aria-label="Toggle light and dark theme">
+                <i class="fas fa-moon moon" aria-hidden="true"></i>
+                <i class="fas fa-sun sun" aria-hidden="true"></i>
+            </button>
+            <a class="btn btn-primary resume-nav-btn" href="pdf/Akash_Samanta_Resume.pdf" target="_blank"
+                rel="noopener">Résumé</a>
         </div>
+    </nav>
 
-    </header>
-    <main>
+    <main id="main-content">
 
-        <section class="about section sec2 about" id="about">
-            <div class="main-title">
-                <h2>About <span>me</span><span class="bg-text">My Stats</span></h2>
-            </div>
-            <div class="about-container">
-                <div class="left-about" id="user-detail-intro">
-                    <h4>PERSONAL SUMMARY:</h4>
+        <header class="hero" id="home">
+            <canvas class="hero-canvas" id="hero-canvas-3d" aria-hidden="true"></canvas>
+            <canvas class="hero-canvas" id="hero-canvas" aria-hidden="true"></canvas>
 
-                    <p>A highly motivated Full Stack Web Developer with a strong proficiency in Problem Solving,
-                        Critical Thinking, and attention to detail. My technical expertise includes HTML, CSS,
-                        JavaScript, TypeScript and Angular for front-end development, and Java, MySQL, Springboot, AWS,
-                        etc. for Back-end development.</p>
-                    <p> As a driven individual, I am actively seeking opportunities to contribute my problem-solving
-                        skills and sharpen my abilities by tackling real-world challenges with my coding expertise. I am
-                        deeply committed to continuous learning and am passionate about discovering innovative solutions
-                        while overcoming obstacles.</p>
+            <div class="container">
+                <div class="hero-inner">
+                    <span class="hero-kicker">// full-stack software engineer</span>
+                    <h1>Hi, I'm <span class="accent">Akash Samanta</span>.</h1>
+                    <p class="hero-role">I build and ship production systems with <strong>Angular</strong> &amp;
+                        <strong>Java / Spring Boot</strong> — and I'm currently deep in an <strong>AI/ML</strong>
+                        program, exploring what comes next.</p>
+                    <p class="hero-summary">3.5+ years building and modernizing production web applications across
+                        insurance and ed-tech. I own frontend architecture end-to-end — migrations, performance,
+                        CI/CD, production releases — while working through a 9-month AI/ML program at IIT Patna on
+                        the side.</p>
 
-                    <div class="btn-con" id="dual_fn_res2">
-                        <a class="main-btn" href="./pdf/Akash_Samanta_Resume.pdf" download="Akash Samanta Resume">
-                            <span class="btn-text">Resume</span>
-                            <span class="btn-icon"><i class="fas fa-download"></i></span>
+                    <div class="hero-cta">
+                        <a class="btn btn-primary" href="pdf/Akash_Samanta_Resume.pdf" download="Akash_Samanta_Resume.pdf">
+                            <i class="fas fa-download" aria-hidden="true"></i> Download résumé
                         </a>
-
+                        <a class="btn btn-ghost" href="#journey">
+                            <i class="fas fa-arrow-right" aria-hidden="true"></i> See the engineering log
+                        </a>
                     </div>
 
-                </div>
-                <div class="right-about">
-                    <div class="about-item">
-                        <div class="abt-text">
-                            <p class="large-text">2000+</p>
-                            <p class="small-text">Hours of <br> Coding Practice</p>
+                    <div class="status-strip">
+                        <div class="status-cell">
+                            <span class="status-label"><span class="pulse" aria-hidden="true"></span>Production</span>
+                            <p class="status-value">Software Developer <span>@ Traceart Technologies</span></p>
                         </div>
-                    </div>
-                    <div class="about-item">
-                        <div class="abt-text">
-                            <p class="large-text">700+</p>
-                            <p class="small-text">DSA Problems <br> Solved</p>
-                        </div>
-                    </div>
-                    <div class="about-item">
-                        <div class="abt-text">
-                            <p class="large-text">100+</p>
-                            <p class="small-text">Hours of <br> Soft-Skill training</p>
-                        </div>
-                    </div>
-                    <div class="about-item">
-                        <div class="abt-text">
-                            <p class="large-text">10+</p>
-                            <p class="small-text">Projects <br> Completed</p>
+                        <div class="status-cell rnd">
+                            <span class="status-label"><span class="pulse" aria-hidden="true"></span>Exploring</span>
+                            <p class="status-value">AI/ML Program <span>@ IIT Patna</span></p>
                         </div>
                     </div>
                 </div>
             </div>
-            <hr>
-            <div class="main-title">
-                <h2>My Github <span>contributions</span><span class="bg-text">Github calender</span></h2>
-            </div>
-            <div class="calendar">
-                <!-- Loading stuff -->
-                Loading the data just for you.
-            </div>
 
-            <div class="git-stat react-activity-calendar">
+            <a href="#journey" class="scroll-cue" id="scroll-cue" aria-label="Scroll to the engineering log">scroll</a>
+        </header>
 
-                <img src="https://github-readme-streak-stats.herokuapp.com?user=aks-samanta&theme=transparent&count_private=true&responsive=true&include_all_commits=true"
-                    alt="" id="github-streak-stats">
-                <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aks-samanta&layout=compact&theme=transparent&include_all_commits=true"
-                    alt="" id="github-top-langs">
-                <img src="https://github-readme-stats.vercel.app/api?username=aks-samanta&show_icons=true&theme=transparent&count_private=true&responsive=true"
-                    alt="" id="github-stats-card">
-                <hr>
-            </div>
-
-            <div class="main-title">
-                <h2>My <span>Timeline</span><span class="bg-text">journey till now</span></h2>
-            </div>
-            <div class="timeline">
-
-
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="tl-duration">Apr 2022 - Present</p>
-                    <h5>Learning Full Stack Web Developement<span> <br> -Masai School</span></h5>
-                    <p>
-
-                    <p>&#8226 Over 200 assignments were completed, over 700 DSA problems were solved, and more than 2000
-                        hours were dedicated to coding within a span of 10 months during the Masai journey. Various
-                        internet resources, such as Dev Tools, websites, APIs, Blogs, Articles, etc., were discovered
-                        during this period. </p>
-
-                    <p>&#8226 Efficient time management was acquired, and multiple projects were undertaken with
-                        different teams for each project, thereby improving communication and collaboration skills.</p>
-
-                    <p>&#8226 Leadership skills were enhanced by leading a project and applying the knowledge gained
-                        during the Skillathon sessions at Masai.</p>
-
-                    <p>&#8226 The most valuable lesson learned at Masai was not limited to coding or DSA but rather the
-                        importance of discipline and deliberate practice.</p>
-                    </p>
+        <section id="journey">
+            <div class="container">
+                <div class="section-head" data-reveal>
+                    <span class="eyebrow">Engineering log</span>
+                    <h2>Where I've shipped software</h2>
+                    <p>Two roles, real production systems, and the habits that carried over between them.</p>
                 </div>
 
-
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
+                <div class="principles" data-reveal>
+                    <div class="principle">
+                        <span class="num">01</span>
+                        <h3>Own the outcome</h3>
+                        <p>I work directly with business stakeholders on BRDs and change requests — not just tickets.</p>
                     </div>
-                    <p class="tl-duration">Nov 2021 - Mar 2022</p>
-                    <h5>Self Study and Exploration of the Software Industry<span> <br> - Internet.</span></h5>
-                    <p>
-                    <p> &#8226 These 5 months proved to be a significant learning experience.</p>
-
-                    <p>&#8226 An extensive range of opensource content, including legacy and contemporary developments
-                        in software and technology, was explored, and advancements in the hardware sector were also
-                        investigated.</p>
-
-                    <p>&#8226 The exploration of these subjects captivated my interest, and I decided to commence my
-                        journey in the expansive software field by pursuing web development, which has become the latest
-                        trend on the internet.</p>
-
-                    </p>
+                    <div class="principle">
+                        <span class="num">02</span>
+                        <h3>Measure, then optimize</h3>
+                        <p>Performance work is data-driven — Lighthouse audits, change-detection strategy, fewer
+                            redundant calls.</p>
+                    </div>
+                    <div class="principle">
+                        <span class="num">03</span>
+                        <h3>Ship, then iterate</h3>
+                        <p>Reusable architecture and CI/CD pipelines so production releases stay routine, not risky.</p>
+                    </div>
                 </div>
 
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="tl-duration">Aug 2021 - Nov 2021</p>
-                    <h5>Machine Operator (Apprentice) <span> <br> - Cipla Ltd.</span></h5>
-                    <p>
+                <div class="log">
+                    <article class="log-entry" data-reveal>
+                        <div class="log-head">
+                            <div class="log-role">
+                                <h3>Software Developer <span class="org">— Traceart Technologies</span></h3>
+                                <p class="loc">Navi Mumbai, India</p>
+                            </div>
+                            <span class="log-duration">Apr 2025 – Present</span>
+                        </div>
 
-                    <p> &#8226 My pursuit of a career in software development took a decisive turn at this point.</p>
+                        <div class="log-metrics">
+                            <div class="log-metric">
+                                <div class="val">20–30L</div>
+                                <div class="label">Enrolled members served</div>
+                            </div>
+                            <div class="log-metric">
+                                <div class="val">50–60 → 75+</div>
+                                <div class="label">Lighthouse score</div>
+                            </div>
+                            <div class="log-metric">
+                                <div class="val">v9 → v12</div>
+                                <div class="label">Angular migration led</div>
+                            </div>
+                        </div>
 
-                    <p>
-                        &#8226 Involvement in a project utilizing Machine Learning and AI to enhance the effectiveness
-                        of Medicine Manufacturing was gained.
-                    </p>
+                        <ul class="log-points">
+                            <li>Own frontend for a corporate group-health insurance platform — 10–15 modules, 15+
+                                role-based pages; delivered 90% of a full UI/UX revamp from Figma.</li>
+                            <li>Led the Angular 9 → 12 migration; built reusable components, role-based access, form
+                                validation, multi-level member approval, and enforced password-reset flows.</li>
+                            <li>Work directly with business stakeholders on BRDs and change requests in a 2-person
+                                engineering team — own production deployments, Azure DevOps CI/CD, and release
+                                troubleshooting end-to-end.</li>
+                            <li>Raised Lighthouse scores from 50–60 to 75+, resolved PDF-download failures in
+                                WebView, and built/deployed a new portal from scratch.</li>
+                        </ul>
 
-                    <p>
-                        &#8226 Understanding of the rigorous regulations imposed by the USFDA and the role of software
-                        development in creating more accurate and efficient machinery to benefit both humans and
-                        employees was also acquired.
-                    </p>
+                        <div class="tag-row">
+                            <span class="tag">Angular</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">.NET</span>
+                            <span class="tag">SQL</span>
+                            <span class="tag">Azure DevOps</span>
+                            <span class="tag">REST APIs</span>
+                        </div>
+                    </article>
 
-                    </p>
-                </div>
+                    <article class="log-entry" data-reveal>
+                        <div class="log-head">
+                            <div class="log-role">
+                                <h3>Angular Developer <span class="org">— CTGT Innovations Pvt. Ltd.</span></h3>
+                                <p class="loc">Pune, India</p>
+                            </div>
+                            <span class="log-duration">Jan 2023 – Apr 2025</span>
+                        </div>
 
+                        <div class="log-metrics">
+                            <div class="log-metric">
+                                <div class="val">~90%</div>
+                                <div class="label">Manual data entry automated</div>
+                            </div>
+                            <div class="log-metric">
+                                <div class="val">~50%</div>
+                                <div class="label">Dev efficiency gain</div>
+                            </div>
+                            <div class="log-metric">
+                                <div class="val">~20%</div>
+                                <div class="label">Faster load times</div>
+                            </div>
+                        </div>
 
+                        <ul class="log-points">
+                            <li>Spearheaded frontend for an HR/placement platform tracking candidates from interview
+                                scheduling through hiring, including an AI-assisted résumé-parsing workflow that
+                                automated ~90% of manual data entry.</li>
+                            <li>Built reusable Angular components, responsive dashboards, dynamic forms, and
+                                NgRx/RxJS state management — improving frontend development efficiency by ~50%.</li>
+                            <li>Applied OnPush change detection, lazy loading, and reusable architecture to cut
+                                redundant API calls and improve load times by ~20%.</li>
+                            <li>ECharts-based dashboards saved 4+ hours/week of manual reporting; collaborated in a
+                                5-person cross-functional team across Node.js, MongoDB, and an Nx monorepo.</li>
+                        </ul>
 
+                        <div class="tag-row">
+                            <span class="tag">Angular</span>
+                            <span class="tag">RxJS</span>
+                            <span class="tag">NgRx</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">Nx</span>
+                        </div>
+                    </article>
 
-
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="tl-duration">Dec 2020 - July 2021</p>
-                    <h5>Mining Electrician Training <span> <br> - National Skill Developement Corporation (NSDC) &
-                            Northern Coalfields Ltd. (NCL) </span></h5>
-                    <p>
-                    <p>&#8226 Acquired knowledge about high voltage Electrical Machines implemented in mines. </p>
-
-                    <p>&#8226 Conducted an analysis of various circuit types and their respective use-cases.</p>
-
-                    <p>&#8226 In addition, a soft-skill and communication course was successfully completed alongside.
-                    </p>
-
-                    </p>
-                </div>
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="tl-duration">2017 - 2020</p>
-                    <h5>Diploma in Electrical Engineering<span><br> - KNPC, Jabalpur </span></h5>
-                    <p>
-
-                    <p>&#8226 Studied Electrical Machines | Electric Circuits | Power Electronics | Basics of Computer
-                        Science | Electric Traction | Mathematics.</p>
-
-                    <p> &#8226 Performed 50+ Lab Practicals.</p>
-
-                    <p> &#8226 Did a 2-day Industrial visit at 11Kv Distribution Substation,</p>
-
-                    <p>&#8226 And a 7-day Industrial training at 32Kv Transmission Substation.</p>
-
-                    </p>
-                </div>
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="tl-duration">2015 - 2017</p>
-                    <h5>Class 12 / Senior Secondary<span> <br>
-                            - DAV Public School (CBSE | PCM | 71.6 %)</span></h5>
-
-                    <p>&#8226 During my experience in Class 12, I was particularly drawn towards the intricate concepts
-                        of Physics and Chemistry, particularly pertaining to atoms and their behavior. Although my
-                        grades were not a reflection of my interest, as I scored only 71.6%, my fascination for
-                        theoretical physics remained unwavered even today. The Special Theory of Relativity and
-                        Heisenberg's Uncertainty Principle continue to captivate my attention.</p>
-
-                    <p>&#8226 In Mathematics, I often pondered about the thought process and methodology employed by Sir
-                        Isaac Newton and Gottfried Wilhelm Leibniz, while discovering calculus. Despite my limited
-                        academic achievements in this field, my passion for exploring complex mathematical concepts
-                        remains persistent.</p>
-                </div>
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="tl-duration">Till 2015</p>
-                    <h5>Class 10 / High School <span> <br> - Christ Jyoti Sr. Sec. School (CBSE | 9 CGPA)</span></h5>
-                </div>
-            </div>
-
-        </section>
-
-        <section class="section sec4 " id="skills">
-            <div class="techtool-content">
-                <div class="main-title">
-                    <h2>Tech <span>Skills</span><span class="bg-text">Languages Tools</span></h2>
-                </div>
-                <div class="techtools">
-
-                    <div class="techtool skills-card">
-                        <img src="./img/html.svg" alt="" class="skills-card-img">
-                        <div class="techtool-text skills-card-name">
-                            <h2>HTML</h2>
+                    <div class="learning-note" data-reveal>
+                        <i class="fas fa-flask icon" aria-hidden="true"></i>
+                        <div>
+                            <h3>Artificial Intelligence &amp; Machine Learning Program</h3>
+                            <p class="org">Vishlesan i-Hub, IIT Patna — delivered through Masai School · 2026 –
+                                Present</p>
+                            <p>A 9-month program covering Python, data analysis, machine learning, deep learning,
+                                NLP, computer vision, generative AI, LLMs, RAG, and MLOps — learning by building,
+                                alongside a full-time engineering role.</p>
                         </div>
                     </div>
-
-                    <div class="techtool skills-card">
-                        <img src="./img/css-alt.svg" alt="" class="skills-card-img">
-                        <div class="techtool-text skills-card-name">
-                            <h2>CSS</h2>
-                        </div>
-                    </div>
-
-                    <div class="techtool skills-card">
-                        <img src="./img/javascript.svg" alt="" class="skills-card-img">
-                        <div class="techtool-text skills-card-name">
-                            <h2>JavaScript</h2>
-                        </div>
-                    </div>
-
-                    <div class="techtool skills-card">
-                        <img src="./img/java.svg" alt="" class="skills-card-img">
-                        <div class="techtool-text skills-card-name">
-                            <h2>Java</h2>
-                        </div>
-                    </div>
-
-                    <div class="techtool skills-card">
-                        <img src="./img/angular.png" alt="" class="skills-card-img">
-                        <div class="techtool-text skills-card-name">
-                            <h2>Angular</h2>
-                        </div>
-                    </div>
-
-                    <div class="techtool skills-card">
-                        <img src="./img/typescript.png" alt="" class="skills-card-img">
-                        <div class="techtool-text skills-card-name">
-                            <h2>TypeScript</h2>
-                        </div>
-                    </div>
-
-                    <div class="techtool skills-card">
-                        <img src="./img/hibernate2.png" alt="" class="skills-card-img">
-                        <div class="techtool-text skills-card-name">
-                            <h2>Hibernate</h2>
-                        </div>
-                    </div>
-
-                    <div class="techtool skills-card">
-                        <img src="./img/sb-removebg-preview.png" alt="" class="skills-card-img">
-                        <div class="techtool-text skills-card-name">
-                            <h2>Spring Boot</h2>
-                        </div>
-                    </div>
-
-                    <div class="techtool skills-card">
-                        <img src="./img/spring-security.png" height="65%" alt="" class="skills-card-img">
-                        <div class="techtool-text skills-card-name">
-                            <h2>Spring Security</h2>
-                        </div>
-                    </div>
-
-                    <div class="techtool skills-card">
-                        <img src="./img/mysql.png" alt="" class="skills-card-img">
-                        <div class="techtool-text skills-card-name">
-                            <h2>MySQL</h2>
-                        </div>
-                    </div>
-
-                    <div class="techtool skills-card">
-                        <img src="./img/spring-removebg-preview.png" alt="" class="skills-card-img">
-                        <div class="techtool-text skills-card-name">
-                            <h2>STS</h2>
-                        </div>
-                    </div>
-
-                    <div class="techtool skills-card">
-                        <img src="./img/github-logo.svg" alt="" class="skills-card-img">
-                        <div class="techtool-text skills-card-name">
-                            <h2>GitHub</h2>
-                        </div>
-                    </div>
-
-                    <div class="techtool skills-card">
-                        <img src="./img/eclipse.svg" alt="" class="skills-card-img">
-                        <div class="techtool-text skills-card-name">
-                            <h2>Eclipse</h2>
-                        </div>
-                    </div>
-
-
-                    <div class="techtool skills-card">
-                        <img src="./img/vscode.svg" alt="" class="skills-card-img">
-                        <div class="techtool-text skills-card-name">
-                            <h2>VS code</h2>
-                        </div>
-                    </div>
-
-                    <div class="techtool skills-card">
-                        <img src="./img/aws.png" alt="" class="skills-card-img">
-                        <div class="techtool-text skills-card-name">
-                            <h2>AWS</h2>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </section>
 
-        <section class="section sec3 " id="projects">
-            <div class="main-title">
-                <h2>My <span>Projects</span><span class="bg-text">Programming Portfolio</span></h2>
-            </div>
-            <p class="port-text">
-                Here is some of my work that I have done in various programming languages.
-            </p>
-            <div class="portfolios">
+        <section id="foundations">
+            <div class="container">
+                <div class="section-head" data-reveal>
+                    <span class="eyebrow">How I got here</span>
+                    <h2>Foundations</h2>
+                    <p>Before Angular and Spring Boot, there was an electrical engineering diploma, a factory floor,
+                        and a decision to switch fields entirely.</p>
+                </div>
 
-                <div class="portfolio-item project-card">
-                    <div class="image">
-                        <img src="./img/taskplanner.png" alt="">
-                        <p class="project-desc project-description">
-                        <h3 class="project-heading project-title">TaskPlanner - Full Stack Task Planner Application</h3>
-                        <p class="project-heading  project-tech-stack">TECH STACK:- Java | TypeScript | Angular |
-                            BootStrap | Springboot |
-                            Hibernate | MySQL | Spring Security | JWT | SwaggerUI | railway.app. </p>
-                        A fullstack application built while learning Angular and TypeScript. Features includes
-                        SignUp/Login(JWT based authentication), Sorting/Filtering Tasks, Add/Remove/Update/Delete Tasks,
-                        Set Reminders, Update User profile.
-
-                        </p>
+                <div class="foundations-grid">
+                    <div class="path-list" data-reveal>
+                        <div class="path-item">
+                            <span class="path-duration">Aug – Nov 2021</span>
+                            <span class="tag parallel-tag">B.Tech in progress</span>
+                            <h3>Machine Operator, Apprentice <span class="org">— Cipla Ltd.</span></h3>
+                            <p>Worked on a project applying machine learning to medicine manufacturing, while my
+                                B.Tech in Electrical &amp; Electronics Engineering was already running in parallel —
+                                my first real exposure to where software and AI intersect with hardware, and the
+                                spark that pointed me toward development.</p>
+                        </div>
+                        <div class="path-item">
+                            <span class="path-duration">Nov 2021 – Mar 2022</span>
+                            <span class="tag parallel-tag">B.Tech in progress</span>
+                            <h3>Left the apprenticeship, kept building <span class="org">— Independent
+                                    self-study</span></h3>
+                            <p>Stepped away from the factory floor to go deep on open-source software and web
+                                development fundamentals alongside ongoing B.Tech coursework, and decided to commit
+                                to software as a career.</p>
+                        </div>
+                        <div class="path-item">
+                            <span class="path-duration">Apr 2022 – Jan 2023</span>
+                            <span class="tag parallel-tag">Final year of B.Tech</span>
+                            <h3>Full-Stack Web Development <span class="org">— Masai School</span></h3>
+                            <p>Took on an intensive full-stack program during the final year of my B.Tech, running
+                                both in parallel — DSA, JavaScript/TypeScript fundamentals, and end-to-end project
+                                work that led directly into my first developer role right as I graduated.</p>
+                        </div>
                     </div>
 
-                    <div class="hover-items">
-                        <h3>A Full Stack Task Planner Application</h3>
-                        <h3>TECH STACK:- Java | TypeScript | Angular | BootStrap | Springboot | Hibernate | MySQL |
-                            Spring Security | JWT | SwaggerUI | railway.app.</h3>
-                        <div class="icons">
-                            <!-- <a href="www.google.com" target="_blank">
-
-                            </a> -->
-                            <a href="https://github.com/aks-samanta/TaskPlannerWithAngularAndSpringBoot" target="_blank"
-                                class="icon project-github-link">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <!-- <a href="#" class="icon">
-                                <i class="fab fa-youtube"></i>
-                            </a> -->
-                            <a href="https://aks-samanta-task-planner.netlify.app/" target="_blank"
-                                class="icon project-deployed-link">
-                                <i class="fas fa-globe"></i>
-                            </a>
+                    <div data-reveal>
+                        <div class="education-heading">Education</div>
+                        <div class="education-list">
+                            <div class="education-item">
+                                <div>
+                                    <h3>B.Tech, Electrical &amp; Electronics Engineering</h3>
+                                    <p class="org">RKDF Institute of Science and Technology</p>
+                                </div>
+                                <span class="yr">2020–2023</span>
+                            </div>
+                            <div class="education-item">
+                                <div>
+                                    <h3>Diploma, Electrical Engineering</h3>
+                                    <p class="org">Kalaniketan Polytechnic College</p>
+                                </div>
+                                <span class="yr">2017–2020</span>
+                            </div>
+                            <div class="education-item">
+                                <div>
+                                    <h3>Class 12, PCM</h3>
+                                    <p class="org">DAV Public School</p>
+                                </div>
+                                <span class="yr">2015–2017</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-
-                <div class="portfolio-item project-card">
-                    <div class="image">
-                        <img src="./img/amusement.png" alt="">
-                        <p class="project-desc project-description">
-                        <h3 class="project-heading project-title">Ease-Amuse - An API for Amusement Park Ride Booking
-                            and Management.
-                        </h3>
-                        <p class="project-heading project-tech-stack">TECH STACK:- Java | Springboot | Hibernate | MySQL
-                            | Spring Security
-                            | JWT |
-                            ModelMapper | SwaggerUI | Maven. </p>
-                        A REST API where you can perform All kinds of CRUD operations related to Amusement Park,
-                        including Ride management and booking.With Role based Authorization using JWT.
-
-                        </p>
-                    </div>
-
-                    <div class="hover-items">
-                        <h3>An API for Amusement Park Ride Booking and Management.</h3>
-                        <h3> TECH STACK:- Java | Springboot | Hibernate | MySQL | Spring Security | JWT |
-                            ModelMapper | SwaggerUI | Maven.</h3>
-                        <div class="icons">
-                            <!-- <a href="www.google.com" target="_blank">
-
-                            </a> -->
-                            <a href="https://github.com/aks-samanta/EaseAmuseWithSpringSecurity" target="_blank"
-                                class="icon project-github-link">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <!-- <a href="#" class="icon">
-                                <i class="fab fa-youtube"></i>
-                            </a> -->
-                            <a href="http://easeamuse-env.eba-da7drbp9.ap-south-1.elasticbeanstalk.com/swagger-ui/index.html#/"
-                                target="_blank" class="icon project-deployed-link">
-                                <i class="fas fa-globe"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="portfolio-item project-card">
-                    <div class="image">
-                        <img src="./img/travel.png" alt="">
-                        <p class="project-desc project-description">
-                        <h3 class="project-heading project-title">TravelZilla - An Online Trip Management System</h3>
-                        <p class="project-heading project-tech-stack">TECH STACK:- Java | Spring | Springboot |
-                            Hibernate | MySQL |
-                            SwaggerUI. </p>
-                        A REST API where you can perform All kinds of CRUD operations related to travel, including
-                        package management, booking, payment and feedback.
-
-                        </p>
-                    </div>
-
-                    <div class="hover-items">
-                        <h3>An Online Trip Management System</h3>
-                        <h3>TECH STACK:- Java | Spring | Springboot | Hibernate | MySQL | SwaggerUI.</h3>
-                        <div class="icons">
-                            <!-- <a href="www.google.com" target="_blank">
-
-                            </a> -->
-                            <a href="https://github.com/Shibshankar01/TravelZilla" target="_blank"
-                                class="icon project-github-link">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <!-- <a href="#" class="icon">
-                                <i class="fab fa-youtube"></i>
-                            </a> -->
-                            <a href="https://github.com/Shibshankar01/TravelZilla" target="_blank"
-                                class="icon project-deployed-link">
-                                <i class="fas fa-globe"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="portfolio-item project-card">
-                    <div class="image">
-                        <img src="./img/boat.png" alt="">
-                        <p class="project-desc project-description">
-                        <h3 class="project-heading project-title">Boat LifeStyle Clone : </h3>
-                        <p class="project-heading project-tech-stack">TECH STACK : HTML | CSS | ES6 | DOM</p>
-                        A front End clone of Boat's website, Product objects are manipulated using DOM manipulation.
-                        It took 5 days for this project to be completed by a team of 5 members.
-
-                        </p>
-                    </div>
-                    <div class="hover-items">
-                        <h3>Boat lifestyle Clone <br> Tech Stack:- HTML | CSS | JavaScript.</h3>
-                        <div class="icons">
-                            <!-- <a href="www.google.com" target="_blank">
-
-                            </a> -->
-                            <a href="https://github.com/ujjwalpaul005/boat-lifestyle_clone" target="_blank"
-                                class="icon project-github-link">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <!-- <a href="#" target="_blank" class="icon">
-                                <i class="fab fa-youtube"></i>
-                            </a> -->
-                            <a href="https://melodic-moxie-2fd921.netlify.app/" target="_blank"
-                                class="icon project-deployed-link">
-                                <i class="fas fa-globe"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="portfolio-item project-card">
-                    <div class="image">
-                        <img src="./img/chargebee.png" alt="">
-                        <p class="project-desc project-description">
-                        <h3 class="project-heading project-title">ChargeBee Clone : </h3>
-                        <p class="project-heading project-tech-stack">TECH STACK : HTML | CSS | ES6 </p>
-                        A front End clone of chargebee's website, completed by a team of 5 members in 5 days.
-
-                        </p>
-                    </div>
-                    <div class="hover-items">
-                        <h3>ChargeBee Website Clone <br>
-                            TECH STACK:- HTML | CSS | JavaScript.
-                        </h3>
-                        <div class="icons">
-                            <!-- <a href="www.google.com" target="_blank">
-
-                            </a> -->
-                            <a href="https://github.com/aks-samanta/ragged-teaching-5719" target="_blank"
-                                class="icon project-github-link">
-                                <i class="fab fa-github "></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                            <a href="https://spectacular-pixie-711efc.netlify.app/" target="_blank"
-                                class="icon project-deployed-link">
-                                <i class="fas fa-globe"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="portfolio-item project-card">
-                    <div class="image">
-                        <img src="./img/hr.png" alt="">
-                        <p class="project-desc project-description">
-                        <h3 class="project-heading project-title">HRगिरि- A Human Resource Management System </h3>
-                        <p class="project-heading project-tech-stack">TECH STACK : Java | JDBC | MySQL </p>
-                        A Console based Java Backend Project, where the Admin and Employee can perform certain CRUD
-                        operations including applying for leave and responsing on leaves etc. using JDBC.
-                        </p>
-                    </div>
-
-                    <div class="hover-items">
-                        <h3>Human Resource Management App</h3>
-                        <h3>TECH STACK : Java | JDBC | MySQL </h3>
-                        <div class="icons">
-                            <!-- <a href="www.google.com" target="_blank">
-
-                            </a> -->
-                            <a href="https://github.com/aks-samanta/HR-giri-_Human_Resource_Management_App"
-                                target="_blank" class="icon project-github-link">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="https://github.com/aks-samanta/HR-giri-_Human_Resource_Management_App"
-                                target="_blank" class="icon project-deployed-link">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                            <!-- <a href="#" class="icon">
-                                <i class="fas fa-globe"></i>
-                            </a> -->
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="portfolio-item project-card">
-                    <div class="image">
-                        <img src="./img/Blog.jpg" alt="">
-                        <p class="project-desc project-description">
-                        <h3 class="project-heading project-title">Blog-App - A Simple Blog App for Practice.
-                        </h3>
-                        <p class="project-heading project-tech-stack">TECH STACK:- Java | Spring | Springboot |
-                            Hibernate | MySQL |
-                            ModelMapper | SwaggerUI | Spring Security. </p>
-                        A REST API where you can perform All kinds of CRUD operations related to Blog App,
-                        including Comments and Image uploading.
-
-                        </p>
-                    </div>
-                    <div class="hover-items">
-                        <h3>Blog-App - A Simple Blog App for Practice.<br>
-                            TECH STACK:- Java | Spring | Springboot | Hibernate | MySQL | SwaggerUI.
-                        </h3>
-                    </div>
-                    <div class="hover-items">
-                        <h3> A Simple Blog App for Practice.</h3>
-                        <h3>TECH STACK:- Java | Spring | Springboot | Hibernate | MySQL | SwaggerUI.</h3>
-                        <div class="icons">
-                            <!-- <a href="www.google.com" target="_blank">
-
-                            </a> -->
-                            <a href="https://github.com/aks-samanta/My-Blog-App" target="_blank"
-                                class="icon project-github-link">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="https://github.com/aks-samanta/My-Blog-App" target="_blank"
-                                class="icon project-deployed-link">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                            <!-- <a href="#" class="icon">
-                                <i class="fas fa-globe"></i>
-                            </a> -->
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </section>
 
-        <section class="section sec5 contact" id="contact">
-            <div class="contact-container">
-                <div class="main-title">
-                    <h2>Let's <span>connect</span><span class="bg-text">Contact me</span></h2>
-
+        <section id="projects">
+            <div class="container">
+                <div class="section-head" data-reveal>
+                    <span class="eyebrow">Selected builds</span>
+                    <h2>Engineering artifacts, not just links</h2>
+                    <p>Full-stack projects where I owned the problem end-to-end — from data model to deployment.</p>
                 </div>
-                <div class="contact-content-con">
-                    <div class="left-contact">
-                        <h4>Contact Me Here</h4>
-                        <p>Although I'm not an Extrovert, however, I love to interact with like-minded folks and
-                            potential recruiters, so if you have any queries or feedback, please feel free to contact
-                            me.</p>
-                        <div class="contact-info">
-                            <div class="contact-item">
-                                <div class="icon">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    <span>Location :- </span>
-                                </div>
-                                <p>
-                                    Singrauli,Madhaya Pradesh.
-                                </p>
-                            </div>
-                            <div class="contact-item">
-                                <div class="icon">
-                                    <i class="fas fa-envelope"></i>
-                                    <span>Email :- </span>
-                                </div>
-                                <p>
-                                    <a href="mailto:aks2.samanta90915@gmail.com">aks2.samanta90915@gmail.com</a>
-                                </p>
-                            </div>
-                            <div class="contact-item">
-                                <div class="icon">
-                                    <i class="fas fa-user-graduate"></i>
-                                    <span>Education :- </span>
-                                </div>
-                                <p>
-                                    Masai School & Internet.
-                                </p>
-                            </div>
-                            <div class="contact-item">
-                                <div class="icon">
-                                    <i class="fas fa-mobile"></i>
-                                    <span>Mobile no. :- </span>
-                                </div>
-                                <p>
-                                    <a href="tel:9589650418">+91-9589650418</a>
-                                </p>
-                            </div>
-                            <div class="contact-item">
-                                <div class="icon">
-                                    <i class="fas fa-language"></i>
-                                    <span>Languages :- </span>
-                                </div>
-                                <p>
-                                    English, Hindi, Bengali.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="contact-icons">
-                            <div class="contact-icon">
-                                <a href="https://github.com/aks-samanta" target="_blank" id="contact-github">
-                                    <i class="fab fa-github"></i>
-                                </a>
 
-                                <a href="https://www.linkedin.com/in/akash-samanta/" target="_blank"
-                                    id="contact-linkedin">
-                                    <i class="fab fa-linkedin"></i>
+                <div class="builds">
+                    <article class="build-card" data-reveal>
+                        <div class="build-head">
+                            <span class="build-index">01</span>
+                            <div class="build-links">
+                                <a class="icon-btn" href="https://github.com/aks-samanta/EaseAmuseWithSpringSecurity"
+                                    target="_blank" rel="noopener" aria-label="EaseAmuse on GitHub">
+                                    <i class="fab fa-github" aria-hidden="true"></i>
                                 </a>
-                                <a href="tel:9589650418" id="contact-phone">
-                                    <i class="fas fa-phone"></i>
-                                </a>
-                                <a href="mailto:aks2.samanta90915@gmail.com" id="contact-email">
-                                    <i class="fas fa-envelope"> </i>
+                                <a class="icon-btn"
+                                    href="http://easeamuse-env.eba-da7drbp9.ap-south-1.elasticbeanstalk.com/swagger-ui/index.html#/"
+                                    target="_blank" rel="noopener" aria-label="EaseAmuse Swagger docs">
+                                    <i class="fas fa-external-link-alt" aria-hidden="true"></i>
                                 </a>
                             </div>
                         </div>
-                    </div>
-                    <div class="right-contact">
-                        <form method="POST"
-                            action="https://script.google.com/macros/s/AKfycbw2bcm8u06Wi78ll20Pbs66wHapNerlSwpLdlHzIDqdqYI_VdxoW3Q_sg9b-QazPWtbbw/exec"
-                            class="contact-form">
-                            <div class="input-control i-c-2">
-                                <input type="text" name="Name" id="" required placeholder="YOUR NAME">
-                                <input type="email" name="Email" id="" required placeholder="YOUR EMAIL">
+                        <h3>EaseAmuse</h3>
+                        <p class="build-problem">PROBLEM — amusement-park ride booking needed secure, role-based
+                            backend operations, not just CRUD.</p>
+                        <p class="build-desc">Secure REST APIs for location-based search, slot booking, and dynamic
+                            pricing, with JWT-based authentication and role-based authorization throughout.</p>
+                        <div class="build-decisions">
+                            <span class="lbl">Engineering decisions</span>
+                            <ul>
+                                <li>JWT auth + Spring Security for role-based access control across booking flows</li>
+                                <li>Deployed on AWS Elastic Beanstalk; API surface documented with Swagger</li>
+                            </ul>
+                        </div>
+                        <div class="tag-row">
+                            <span class="tag">Java</span>
+                            <span class="tag">Spring Boot</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">Spring Security</span>
+                            <span class="tag">JWT</span>
+                            <span class="tag">AWS</span>
+                        </div>
+                    </article>
+
+                    <article class="build-card" data-reveal>
+                        <div class="build-head">
+                            <span class="build-index">02</span>
+                            <div class="build-links">
+                                <a class="icon-btn"
+                                    href="https://github.com/aks-samanta/TaskPlannerWithAngularAndSpringBoot"
+                                    target="_blank" rel="noopener" aria-label="Task Planner on GitHub">
+                                    <i class="fab fa-github" aria-hidden="true"></i>
+                                </a>
+                                <a class="icon-btn" href="https://aks-samanta-task-planner.netlify.app/"
+                                    target="_blank" rel="noopener" aria-label="Task Planner live demo">
+                                    <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                                </a>
                             </div>
-                            <div class="input-control">
-                                <input type="text" name="Subject" id="" required placeholder="ENTER SUBJECT">
+                        </div>
+                        <h3>Task Planner</h3>
+                        <p class="build-problem">PROBLEM — managing tasks across a full-stack app while keeping
+                            frontend state predictable.</p>
+                        <p class="build-desc">A responsive full-stack task manager with JWT authentication,
+                            NgRx-driven state, and a Spring Boot REST API behind it.</p>
+                        <div class="build-decisions">
+                            <span class="lbl">Engineering decisions</span>
+                            <ul>
+                                <li>NgRx + RxJS for predictable, testable state management on the frontend</li>
+                                <li>Split deployment — Angular on Netlify, Spring Boot API on Railway, assets on AWS
+                                    S3</li>
+                            </ul>
+                        </div>
+                        <div class="tag-row">
+                            <span class="tag">Angular</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">Spring Boot</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">NgRx</span>
+                            <span class="tag">AWS</span>
+                        </div>
+                    </article>
+                </div>
+
+                <button class="earlier-toggle" id="earlier-toggle" aria-expanded="false"
+                    aria-controls="earlier-panel">
+                    <i class="fas fa-archive" aria-hidden="true"></i>
+                    <span class="chev-label">Show earlier work</span>
+                    <i class="fas fa-chevron-down chev" aria-hidden="true"></i>
+                </button>
+
+                <div class="earlier-panel" id="earlier-panel">
+                    <div class="earlier-panel-inner">
+                        <p style="color: var(--text-tertiary); font-size: 0.88rem; margin-top: 1rem; max-width: 60ch;">
+                            Practice projects and team clones from early in my learning journey — kept here for a
+                            complete history, not presented as production work.
+                        </p>
+                        <div class="earlier-grid">
+                            <div class="earlier-card">
+                                <img src="img/boat.png" alt="" loading="lazy">
+                                <div class="earlier-card-body">
+                                    <h4>Boat Lifestyle Clone</h4>
+                                    <p class="stack">HTML · CSS · JS</p>
+                                    <div class="earlier-links">
+                                        <a href="https://github.com/ujjwalpaul005/boat-lifestyle_clone"
+                                            target="_blank" rel="noopener">GitHub</a>
+                                        <a href="https://melodic-moxie-2fd921.netlify.app/" target="_blank"
+                                            rel="noopener">Live</a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="input-control">
-                                <textarea name="Message" id="" cols="15" rows="8"
-                                    placeholder="Message Here..."></textarea>
+                            <div class="earlier-card">
+                                <img src="img/chargebee.png" alt="" loading="lazy">
+                                <div class="earlier-card-body">
+                                    <h4>ChargeBee Clone</h4>
+                                    <p class="stack">HTML · CSS · JS</p>
+                                    <div class="earlier-links">
+                                        <a href="https://github.com/aks-samanta/ragged-teaching-5719" target="_blank"
+                                            rel="noopener">GitHub</a>
+                                        <a href="https://spectacular-pixie-711efc.netlify.app/" target="_blank"
+                                            rel="noopener">Live</a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="submit-btn">
-
-                                <button type="submit" class="main-btn">
-                                    <span class="btn-text">Submit</span>
-                                    <span class="btn-icon"><i class="fas fa-upload"></i></span>
-                                </button>
-
-
-
+                            <div class="earlier-card">
+                                <img src="img/hr.png" alt="" loading="lazy">
+                                <div class="earlier-card-body">
+                                    <h4>HR Management App</h4>
+                                    <p class="stack">Java · JDBC · MySQL</p>
+                                    <div class="earlier-links">
+                                        <a href="https://github.com/aks-samanta/HR-giri-_Human_Resource_Management_App"
+                                            target="_blank" rel="noopener">GitHub</a>
+                                    </div>
+                                </div>
                             </div>
-                        </form>
-
-
-
+                            <div class="earlier-card">
+                                <img src="img/travel.png" alt="" loading="lazy">
+                                <div class="earlier-card-body">
+                                    <h4>TravelZilla</h4>
+                                    <p class="stack">Java · Spring Boot · MySQL</p>
+                                    <div class="earlier-links">
+                                        <a href="https://github.com/Shibshankar01/TravelZilla" target="_blank"
+                                            rel="noopener">GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="earlier-card">
+                                <img src="img/Blog.jpg" alt="" loading="lazy">
+                                <div class="earlier-card-body">
+                                    <h4>Blog App</h4>
+                                    <p class="stack">Java · Spring Boot · MySQL</p>
+                                    <div class="earlier-links">
+                                        <a href="https://github.com/aks-samanta/My-Blog-App" target="_blank"
+                                            rel="noopener">GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <br> <br>
-            <div>
-                <p> © 2022 Inspired from freecodecamp.org</p>
+        </section>
+
+        <section id="stack">
+            <div class="container">
+                <div class="section-head" data-reveal>
+                    <span class="eyebrow">Production vs R&amp;D</span>
+                    <h2>What I ship vs. what I'm exploring</h2>
+                    <p>Two different confidence levels, kept visually distinct — production experience isn't the
+                        same thing as active learning.</p>
+                </div>
+
+                <div class="stack-zones">
+                    <div class="zone zone-prod" data-reveal>
+                        <div class="zone-head">
+                            <h3>In production</h3>
+                            <span class="status-dot">Shipped</span>
+                        </div>
+                        <p class="zone-desc">Technologies I use daily to build and run real, deployed systems.</p>
+                        <div class="zone-chips">
+                            <span class="chip weight-core">Angular</span>
+                            <span class="chip weight-core">TypeScript</span>
+                            <span class="chip">RxJS</span>
+                            <span class="chip">NgRx</span>
+                            <span class="chip">Angular Material</span>
+                            <span class="chip weight-core">Java</span>
+                            <span class="chip weight-core">Spring Boot</span>
+                            <span class="chip">Spring Security</span>
+                            <span class="chip">Spring MVC</span>
+                            <span class="chip">Hibernate / JPA</span>
+                            <span class="chip">.NET</span>
+                            <span class="chip">Node.js</span>
+                            <span class="chip">REST APIs</span>
+                            <span class="chip">JWT</span>
+                            <span class="chip">MySQL</span>
+                            <span class="chip">MongoDB</span>
+                            <span class="chip">AWS</span>
+                            <span class="chip">Azure DevOps</span>
+                            <span class="chip">CI/CD</span>
+                            <span class="chip">Git</span>
+                        </div>
+                    </div>
+
+                    <div class="zone zone-rnd" data-reveal>
+                        <div class="zone-head">
+                            <h3>In the lab</h3>
+                            <span class="status-dot">Exploring</span>
+                        </div>
+                        <p class="zone-desc">Currently learning hands-on through the AI/ML program at IIT Patna —
+                            not yet production claims.</p>
+                        <div class="zone-chips">
+                            <span class="chip weight-core">Python</span>
+                            <span class="chip">NumPy</span>
+                            <span class="chip">Pandas</span>
+                            <span class="chip">Scikit-learn</span>
+                            <span class="chip">Machine Learning</span>
+                            <span class="chip">Deep Learning</span>
+                            <span class="chip">NLP</span>
+                            <span class="chip">Computer Vision</span>
+                            <span class="chip weight-core">Generative AI</span>
+                            <span class="chip weight-core">LLMs</span>
+                            <span class="chip">RAG</span>
+                            <span class="chip">MLOps</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <div class="section-head" data-reveal>
+                    <span class="eyebrow">Get in touch</span>
+                    <h2>Let's connect</h2>
+                    <p>Open to full-stack roles and conversations about frontend architecture, performance, or where
+                        AI fits into real products.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info" data-reveal>
+                        <p class="lead">Based in Navi Mumbai, Maharashtra. I reply fastest by email.</p>
+
+                        <ul class="contact-list">
+                            <li><span class="ic"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></span> Navi
+                                Mumbai, Maharashtra</li>
+                            <li><span class="ic"><i class="fas fa-envelope" aria-hidden="true"></i></span>
+                                <a href="mailto:aks2.samanth90915@gmail.com">aks2.samanth90915@gmail.com</a>
+                            </li>
+                            <li><span class="ic"><i class="fas fa-phone" aria-hidden="true"></i></span>
+                                <a href="tel:+919589650418">+91 95896 50418</a>
+                            </li>
+                            <li><span class="ic"><i class="fas fa-language" aria-hidden="true"></i></span> English,
+                                Hindi, Bengali</li>
+                        </ul>
+
+                        <div class="social-row">
+                            <a class="icon-btn" href="https://github.com/aks-samanta" target="_blank" rel="noopener"
+                                aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+                            <a class="icon-btn" href="https://www.linkedin.com/in/akash-samanta/" target="_blank"
+                                rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"
+                                    aria-hidden="true"></i></a>
+                            <a class="icon-btn" href="mailto:aks2.samanth90915@gmail.com" aria-label="Email"><i
+                                    class="fas fa-envelope" aria-hidden="true"></i></a>
+                            <a class="icon-btn" href="pdf/Akash_Samanta_Resume.pdf" target="_blank" rel="noopener"
+                                aria-label="Résumé"><i class="fas fa-file-alt" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" data-reveal method="POST"
+                        action="https://script.google.com/macros/s/AKfycbw2bcm8u06Wi78ll20Pbs66wHapNerlSwpLdlHzIDqdqYI_VdxoW3Q_sg9b-QazPWtbbw/exec">
+                        <div class="form-row">
+                            <input type="text" name="Name" required placeholder="Your name" aria-label="Your name">
+                            <input type="email" name="Email" required placeholder="Your email"
+                                aria-label="Your email">
+                        </div>
+                        <input type="text" name="Subject" required placeholder="Subject" aria-label="Subject">
+                        <textarea name="Message" rows="6" placeholder="Message" aria-label="Message"></textarea>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane" aria-hidden="true"></i> Send message
+                        </button>
+                        <p class="form-status" role="status" aria-live="polite"></p>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
 
+    <footer class="site-footer">
+        <span>© <span id="current-year">2026</span> Akash Samanta</span>
+        <span>Built with HTML, CSS &amp; JavaScript.</span>
+    </footer>
 
-    <div class="theme-btn">
-        <i class="fas fa-adjust"></i>
-
-    </div>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/reveal.js"></script>
+    <script src="js/network-3d.js"></script>
+    <script src="js/network-canvas.js"></script>
+    <script src="js/tilt.js"></script>
+    <script src="js/projects.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
-<script src="app.js"></script>
-<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
-</script>
-<script>
-    GitHubCalendar(".calendar", "aks-samanta", { responsive: true });
-</script>

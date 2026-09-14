@@ -1,0 +1,167 @@
+.principles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    margin-bottom: clamp(2.5rem, 6vw, 4rem);
+}
+
+.principle {
+    background: var(--bg-elevated);
+    padding: 1.4rem 1.5rem;
+}
+
+.principle .num {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--accent);
+}
+
+.principle h3 {
+    font-size: 1rem;
+    margin-top: 0.6rem;
+}
+
+.principle p {
+    margin-top: 0.5rem;
+    font-size: 0.88rem;
+    color: var(--text-secondary);
+}
+
+.log {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.log-entry {
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    background: linear-gradient(180deg, var(--bg-elevated), var(--bg-elevated-2));
+    padding: clamp(1.5rem, 3.5vw, 2.4rem);
+    position: relative;
+}
+
+.log-head {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.2rem;
+}
+
+.log-role h3 {
+    font-size: 1.25rem;
+}
+
+.log-role .org {
+    color: var(--accent);
+    font-weight: 500;
+}
+
+.log-role .loc {
+    color: var(--text-tertiary);
+    font-size: 0.85rem;
+    margin-top: 0.25rem;
+}
+
+.log-duration {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--text-tertiary);
+    white-space: nowrap;
+    border: 1px solid var(--border);
+    padding: 0.35rem 0.7rem;
+    border-radius: 999px;
+}
+
+.log-metrics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 1rem;
+    margin: 1.3rem 0;
+    padding: 1.1rem 0;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.log-metric .val {
+    font-family: var(--font-mono);
+    font-size: 1.3rem;
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.log-metric .label {
+    font-size: 0.78rem;
+    color: var(--text-tertiary);
+    margin-top: 0.2rem;
+}
+
+.log-points {
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+    margin-bottom: 1.3rem;
+}
+
+.log-points li {
+    position: relative;
+    padding-left: 1.3rem;
+    color: var(--text-secondary);
+    font-size: 0.96rem;
+}
+
+.log-points li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.55em;
+    width: 6px;
+    height: 6px;
+    border-radius: 1px;
+    background: var(--accent);
+    transform: rotate(45deg);
+}
+
+.learning-note {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    border: 1px dashed var(--border-strong);
+    border-radius: var(--radius-lg);
+    padding: 1.3rem 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.learning-note .icon {
+    color: var(--rnd);
+    font-size: 1.1rem;
+    margin-top: 0.15rem;
+}
+
+.learning-note h3 {
+    font-size: 1rem;
+}
+
+.learning-note .org {
+    color: var(--rnd);
+    font-size: 0.88rem;
+    margin-top: 0.2rem;
+}
+
+.learning-note p {
+    margin-top: 0.6rem;
+    color: var(--text-secondary);
+    font-size: 0.92rem;
+}
+
+@media (max-width: 640px) {
+    .log-head {
+        flex-direction: column;
+    }
+}

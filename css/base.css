@@ -1,0 +1,227 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    color-scheme: dark;
+    overflow-x: hidden;
+}
+
+body.light-mode {
+    color-scheme: light;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+body {
+    background: var(--bg);
+    color: var(--text-primary);
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    transition: background var(--dur-md) var(--ease), color var(--dur-md) var(--ease);
+}
+
+img,
+svg,
+canvas {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+button {
+    font: inherit;
+    color: inherit;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.15;
+    font-weight: 650;
+    letter-spacing: -0.01em;
+}
+
+.container {
+    width: 100%;
+    max-width: var(--container);
+    margin-inline: auto;
+    padding-inline: var(--gutter);
+}
+
+.eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5em;
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--accent);
+}
+
+.eyebrow::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: currentColor;
+}
+
+.section-head {
+    max-width: 640px;
+    margin-bottom: clamp(2rem, 5vw, 3.5rem);
+}
+
+.section-head h2 {
+    font-size: clamp(1.7rem, 3.2vw, 2.4rem);
+    margin-top: 0.6rem;
+}
+
+.section-head p {
+    color: var(--text-secondary);
+    margin-top: 0.85rem;
+    font-size: 1.02rem;
+    max-width: 56ch;
+}
+
+section {
+    position: relative;
+    padding-block: clamp(4rem, 9vw, 7rem);
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+}
+
+.skip-link {
+    position: fixed;
+    top: -100px;
+    left: 1rem;
+    z-index: 999;
+    background: var(--accent);
+    color: #0a0d12;
+    padding: 0.7rem 1.1rem;
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    transition: top var(--dur-sm) var(--ease);
+}
+
+.skip-link:focus {
+    top: 1rem;
+}
+
+:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 4px;
+}
+
+/* buttons */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.85rem 1.4rem;
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: transform var(--dur-sm) var(--ease), border-color var(--dur-sm) var(--ease), background var(--dur-sm) var(--ease);
+    border: 1px solid var(--border-strong);
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn-primary {
+    background: var(--accent);
+    color: #06090d;
+    border-color: transparent;
+}
+
+.btn-primary:hover {
+    background: var(--accent-strong);
+}
+
+.btn-ghost {
+    background: transparent;
+    color: var(--text-primary);
+}
+
+.btn-ghost:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.tag-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tag {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.02em;
+    padding: 0.3rem 0.65rem;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    color: var(--text-secondary);
+    background: var(--bg-elevated);
+    white-space: nowrap;
+}
+
+::selection {
+    background: var(--accent);
+    color: #06090d;
+}
+
+/* scroll reveal base */
+[data-reveal] {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity var(--dur-lg) var(--ease), transform var(--dur-lg) var(--ease);
+}
+
+[data-reveal].is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    [data-reveal] {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}

@@ -1,0 +1,115 @@
+.stack-zones {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(1.25rem, 3vw, 2rem);
+}
+
+.zone {
+    border-radius: var(--radius-lg);
+    padding: clamp(1.5rem, 3vw, 2.2rem);
+    border: 1px solid var(--border);
+    background: var(--bg-elevated);
+    position: relative;
+    overflow: hidden;
+}
+
+.zone::before {
+    content: "";
+    position: absolute;
+    top: -40%;
+    right: -20%;
+    width: 60%;
+    height: 60%;
+    background: radial-gradient(circle, var(--zone-glow, var(--accent-soft)), transparent 70%);
+    pointer-events: none;
+}
+
+.zone-prod {
+    --zone-glow: var(--accent-soft);
+}
+
+.zone-rnd {
+    --zone-glow: var(--rnd-soft);
+    border-style: dashed;
+}
+
+.zone-head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+    position: relative;
+}
+
+.zone-head h3 {
+    font-size: 1.15rem;
+}
+
+.zone-head .status-dot {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 0.3rem 0.6rem;
+    border-radius: 999px;
+    border: 1px solid var(--border-strong);
+    color: var(--text-secondary);
+    white-space: nowrap;
+}
+
+.zone-prod .zone-head .status-dot {
+    color: var(--accent);
+    border-color: color-mix(in srgb, var(--accent) 50%, transparent);
+}
+
+.zone-rnd .zone-head .status-dot {
+    color: var(--rnd);
+    border-color: color-mix(in srgb, var(--rnd) 50%, transparent);
+}
+
+.zone p.zone-desc {
+    margin-top: 0.6rem;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    max-width: 46ch;
+    position: relative;
+}
+
+.zone-chips {
+    margin-top: 1.4rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    position: relative;
+}
+
+.chip {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    padding: 0.4rem 0.75rem;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border);
+    background: var(--bg-elevated-2);
+    color: var(--text-primary);
+    transition: border-color var(--dur-sm) var(--ease), transform var(--dur-sm) var(--ease);
+}
+
+.zone-prod .chip:hover {
+    border-color: var(--accent);
+    transform: translateY(-2px);
+}
+
+.zone-rnd .chip:hover {
+    border-color: var(--rnd);
+    transform: translateY(-2px);
+}
+
+.chip.weight-core {
+    font-weight: 600;
+}
+
+@media (max-width: 780px) {
+    .stack-zones {
+        grid-template-columns: 1fr;
+    }
+}
