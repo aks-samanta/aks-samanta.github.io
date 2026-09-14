@@ -5,7 +5,7 @@
     var noHover = window.matchMedia && window.matchMedia("(hover: none)").matches;
     if (reduceMotion || noHover) return;
 
-    var els = document.querySelectorAll(".build-card, .log-entry, .zone, .principle, .earlier-card");
+    var els = document.querySelectorAll(".build-card, .log-entry, .zone, .earlier-card");
     var MAX_TILT = 5;
 
     els.forEach(function (el) {

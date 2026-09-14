@@ -2,7 +2,20 @@
     "use strict";
 
     var canvas = document.getElementById("hero-canvas");
-    if (!canvas || !canvas.getContext || window.__heroUses3D) return;
+    if (!canvas || !canvas.getContext) return;
+
+    // network-3d.js defers its eligibility decision by one macrotask tick
+    // (window.innerWidth isn't reliable at synchronous parse time in every
+    // environment) — queue behind it so __heroUses3D is settled before we read it.
+    setTimeout(function () {
+        if (window.__heroUses3D) {
+            window.addEventListener("hero3dfallback", init, { once: true });
+            return;
+        }
+        init();
+    });
+
+    function init() {
 
     var ctx = canvas.getContext("2d");
     var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -150,5 +163,6 @@
             var args = arguments;
             t = setTimeout(function () { fn.apply(null, args); }, wait);
         };
+    }
     }
 })();

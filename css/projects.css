@@ -93,6 +93,13 @@
 }
 
 /* earlier work */
+.earlier-intro {
+    color: var(--text-tertiary);
+    font-size: 0.88rem;
+    margin-top: 1rem;
+    max-width: 60ch;
+}
+
 .earlier-toggle {
     display: flex;
     align-items: center;

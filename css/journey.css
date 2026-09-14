@@ -1,36 +1,3 @@
-.principles {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1px;
-    background: var(--border);
-    border: 1px solid var(--border);
-    border-radius: var(--radius-md);
-    overflow: hidden;
-    margin-bottom: clamp(2.5rem, 6vw, 4rem);
-}
-
-.principle {
-    background: var(--bg-elevated);
-    padding: 1.4rem 1.5rem;
-}
-
-.principle .num {
-    font-family: var(--font-mono);
-    font-size: 0.75rem;
-    color: var(--accent);
-}
-
-.principle h3 {
-    font-size: 1rem;
-    margin-top: 0.6rem;
-}
-
-.principle p {
-    margin-top: 0.5rem;
-    font-size: 0.88rem;
-    color: var(--text-secondary);
-}
-
 .log {
     display: flex;
     flex-direction: column;

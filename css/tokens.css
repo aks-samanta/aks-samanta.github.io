@@ -10,7 +10,7 @@
     /* text */
     --text-primary: #e9edf2;
     --text-secondary: #99a3b1;
-    --text-tertiary: #616b79;
+    --text-tertiary: #8a93a3;
 
     /* accents */
     --accent: #5b8cff;
@@ -50,7 +50,7 @@ body.light-mode {
 
     --text-primary: #12161d;
     --text-secondary: #4c5563;
-    --text-tertiary: #7b8493;
+    --text-tertiary: #5a6270;
 
     --accent: #3763db;
     --accent-rgb: 55, 99, 219;

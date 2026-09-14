@@ -57,6 +57,18 @@
     gap: 1rem;
 }
 
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.field label {
+    font-size: 0.78rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+}
+
 .contact-form input,
 .contact-form textarea {
     width: 100%;
